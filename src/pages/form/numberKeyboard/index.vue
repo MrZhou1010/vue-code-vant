@@ -1,5 +1,5 @@
 <template>
-	<div class="numberKeyboard">
+	<div class="number-keyboard">
 		<van-nav-bar style="background-color: lightblue;" left-arrow fixed border safe-area-inset-top :title="title"
 			@click-left="goBack()">
 		</van-nav-bar>
@@ -22,36 +22,35 @@
 			<van-cell is-link title="弹出配置随机数字的键盘" :value="value6" @touchstart.native.stop="showKeyboard6 = true" />
 			<van-number-keyboard :show="showKeyboard6" random-key-order @blur="showKeyboard6 = false" @input="onInput6"
 				@delete="onDelete6" />
-			<van-cell is-link title="双向绑定" :value="value7" @touchstart.native.stop="showKeyboard6 = true" />
-			<van-number-keyboard v-model="value7" :show="showKeyboard6" :maxlength="6" @blur="showKeyboard6 = false" />
+			<van-cell is-link title="双向绑定" :value="value7" @touchstart.native.stop="showKeyboard7 = true" />
+			<van-number-keyboard v-model="value7" :show="showKeyboard7" :maxlength="6" @blur="showKeyboard7 = false" />
 		</div>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '',
+				title: "",
 				showKeyboard1: false,
-				value1: '',
+				value1: "",
 				showKeyboard2: false,
-				value2: '',
+				value2: "",
 				showKeyboard3: false,
-				value3: '',
+				value3: "",
 				showKeyboard4: false,
-				value4: '',
+				value4: "",
 				showKeyboard5: false,
-				value5: '',
+				value5: "",
 				showKeyboard6: false,
-				value6: '',
+				value6: "",
 				showKeyboard7: false,
-				value7: '',
-			}
+				value7: "",
+			};
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
 		mounted() {
@@ -96,16 +95,16 @@
 			},
 			onDelete6() {
 				this.value6 = this.value6.slice(0, -1);
-			}
+			},
 		}
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
-		padding: 0.625rem 0;
+		padding: 0.625rem;
+		background-color: #f8f8f8;
 		text-align: left;
-		background-color: #F8F8F8;
 	}
 </style>

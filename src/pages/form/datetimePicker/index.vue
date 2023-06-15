@@ -1,5 +1,5 @@
 <template>
-	<div class="datetimePicker">
+	<div class="datetime-picker">
 		<van-nav-bar style="background-color: lightblue;" left-arrow fixed border safe-area-inset-top :title="title"
 			@click-left="goBack()">
 		</van-nav-bar>
@@ -77,45 +77,44 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '',
+				title: "",
 				show1: false,
-				dateValue1: '',
+				dateValue1: "",
 				selectedDate1: new Date(),
 				show2: false,
-				dateValue2: '',
+				dateValue2: "",
 				selectedDate2: new Date(),
 				show3: false,
-				dateValue3: '',
+				dateValue3: "",
 				selectedDate3: new Date(),
 				show4: false,
-				dateValue4: '',
-				selectedDate4: '12:00',
+				dateValue4: "",
+				selectedDate4: "12:00",
 				show5: false,
-				dateValue5: '',
+				dateValue5: "",
 				selectedDate5: new Date(),
 				show6: false,
-				dateValue6: '',
+				dateValue6: "",
 				selectedDate6: new Date(),
 				show7: false,
-				dateValue7: '',
-				selectedDate7: '12:00',
+				dateValue7: "",
+				selectedDate7: "12:00",
 				show8: false,
-				dateValue8: '',
+				dateValue8: "",
 				selectedDate8: new Date(),
 				show9: false,
-				dateValue9: '',
+				dateValue9: "",
 				selectedDate9: new Date(),
 				minDate: new Date(2020, 0, 1),
 				maxDate: new Date(2022, 12, 31),
 				minHour: 8,
 				maxHour: 18,
-			}
+			};
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
 		methods: {
@@ -125,17 +124,17 @@
 			onConfirm1(date) {
 				this.show1 = false;
 				this.selectedDate1 = date;
-				this.dateValue1 = this.formatDate(date, 'yyyy-MM-dd');
+				this.dateValue1 = this.formatDate(date, "yyyy-MM-dd");
 			},
 			onConfirm2(date) {
 				this.show2 = false;
 				this.selectedDate2 = date;
-				this.dateValue2 = this.formatDate(date, 'yyyy-MM');
+				this.dateValue2 = this.formatDate(date, "yyyy-MM");
 			},
 			onConfirm3(date) {
 				this.show3 = false;
 				this.selectedDate3 = date;
-				this.dateValue3 = this.formatDate(date, 'MM-dd');
+				this.dateValue3 = this.formatDate(date, "MM-dd");
 			},
 			onConfirm4(dateValue) {
 				this.show4 = false;
@@ -145,12 +144,12 @@
 			onConfirm5(date) {
 				this.show5 = false;
 				this.selectedDate5 = date;
-				this.dateValue5 = this.formatDate(date, 'yyyy-MM-dd HH:mm');
+				this.dateValue5 = this.formatDate(date, "yyyy-MM-dd HH:mm");
 			},
 			onConfirm6(date) {
 				this.show6 = false;
 				this.selectedDate6 = date;
-				this.dateValue6 = this.formatDate(date, 'yyyy-MM-dd HH');
+				this.dateValue6 = this.formatDate(date, "yyyy-MM-dd HH");
 			},
 			onConfirm7(dateValue) {
 				this.show7 = false;
@@ -160,42 +159,42 @@
 			onConfirm8(date) {
 				this.show8 = false;
 				this.selectedDate8 = date;
-				this.dateValue8 = this.formatDate(date, 'yyyy-MM-dd');
+				this.dateValue8 = this.formatDate(date, "yyyy-MM-dd");
 			},
 			onConfirm9(date) {
 				this.show9 = false;
 				this.selectedDate9 = date;
-				this.dateValue9 = this.formatDate(date, 'yyyy-MM-dd');
+				this.dateValue9 = this.formatDate(date, "yyyy-MM-dd");
 			},
 			formatDate(date, format) {
-				if (format == 'yyyy-MM-dd') {
+				if (format == "yyyy-MM-dd") {
 					return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
-				} else if (format == 'yyyy-MM') {
+				} else if (format == "yyyy-MM") {
 					return `${date.getFullYear()}/${date.getMonth() + 1}`;
-				} else if (format == 'MM-dd') {
+				} else if (format == "MM-dd") {
 					return `${date.getMonth() + 1}/${date.getDate()}`;
-				} else if (format == 'yyyy-MM-dd HH:mm') {
+				} else if (format == "yyyy-MM-dd HH:mm") {
 					return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}/${date.getMinutes()}`;
-				} else if (format == 'yyyy-MM-dd HH') {
+				} else if (format == "yyyy-MM-dd HH") {
 					return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}`;
 				}
 			},
 			formatter(type, option) {
-				if (type === 'year') {
+				if (type === "year") {
 					return `${option}年`;
-				} else if (type === 'month') {
+				} else if (type === "month") {
 					return `${option}月`;
-				} else if (type === 'day') {
+				} else if (type === "day") {
 					return `${option}日`;
-				} else if (type === 'hour') {
+				} else if (type === "hour") {
 					return `${option}时`;
-				} else if (type === 'minute') {
+				} else if (type === "minute") {
 					return `${option}分`;
 				}
 				return option;
 			},
 			filter(type, options) {
-				if (type === 'minute') {
+				if (type === "minute") {
 					return options.filter((option) => option % 5 === 0);
 				}
 				return options;
@@ -204,12 +203,12 @@
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
 		padding: 0.625rem;
+		background-color: #f8f8f8;
 		text-align: left;
-		background-color: #F8F8F8;
 	}
 
 	.item-cell {

@@ -105,65 +105,62 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				username: '',
-				password: '',
-				value1: '',
-				value2: '',
-				value3: '',
-				value4: '',
-				value5: '',
-				value6: '',
+				username: "",
+				password: "",
+				value1: "",
+				value2: "",
+				value3: "",
+				value4: "",
+				value5: "",
+				value6: "",
 				value7: "",
 				pattern: /\d{6}/,
 				switchChecked: false,
 				checkbox: false,
 				checkboxGroup: [],
-				radio: '1',
+				radio: "1",
 				stepper: 1,
 				rate: 3,
 				slider: 30,
 				uploader: [{
-					url: 'https://img01.yzcdn.cn/vant/leaf.jpg'
+					url: "https://img01.yzcdn.cn/vant/leaf.jpg"
 				}],
 				showPicker: false,
 				showDateTimePicker: false,
 				showArea: false,
 				showCalendar: false,
-				columns: ['杭州', '宁波', '温州', '嘉兴', '湖州'],
+				columns: ["杭州", "宁波", "温州", "嘉兴", "湖州"],
 				areaList: {
 					province_list: {
-						110000: '北京市',
-						120000: '天津市',
+						110000: "北京市",
+						120000: "天津市",
 					},
 					city_list: {
-						110100: '北京市',
-						120100: '天津市',
+						110100: "北京市",
+						120100: "天津市",
 					},
 					county_list: {
-						110101: '东城区',
-						110102: '西城区',
+						110101: "东城区",
+						110102: "西城区",
 					},
 				}
-			}
+			};
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
-		mounted() {
-
-		},
+		mounted() {},
 		methods: {
 			goBack() {
 				this.$router.goBack();
 			},
 			onSubmit(values) {
 				let messages = [];
-				Object.keys(values).forEach(key => messages.push(key + ':' + values[key]));
-				const message = messages.join(',');
+				Object.keys(values).forEach(key => messages.push(key + ":" + values[key]));
+				const message = messages.join(",");
 				this.$toast(message);
 			},
 			// 校验函数返回true表示校验通过 false表示不通过
@@ -173,15 +170,17 @@
 			// 异步校验函数返回Promise
 			asyncValidator(val) {
 				return new Promise((resolve) => {
-					this.$toast.loading('验证中...');
+					this.$toast.loading("验证中...");
 					setTimeout(() => {
 						this.$toast.clear();
 						resolve(/\d{6}/.test(val));
 					}, 1000);
 				});
 			},
-			onFailed(errorMessage) {
-				this.$toast(errorMessage);
+			onFailed(error) {
+				if (error.errors && error.errors.length > 0) {
+					this.$toast(error.errors[0].message);
+				}
 			},
 			onConfirm1(value) {
 				this.showPicker = false;
@@ -189,7 +188,7 @@
 			},
 			onConfirm2(date) {
 				this.showDateTimePicker = false;
-				this.value5 = this.formatDate(date, 'yyyy-MM-dd HH:mm');
+				this.value5 = this.formatDate(date, "yyyy-MM-dd HH:mm");
 			},
 			onConfirm3(areas) {
 				this.showArea = false;
@@ -197,31 +196,31 @@
 			},
 			onConfirm4(date) {
 				this.showCalendar = false;
-				this.value7 = this.formatDate(date, 'yyyy-MM-dd');
+				this.value7 = this.formatDate(date, "yyyy-MM-dd");
 			},
 			formatDate(date, format) {
-				if (format == 'yyyy-MM-dd') {
+				if (format == "yyyy-MM-dd") {
 					return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
-				} else if (format == 'yyyy-MM') {
+				} else if (format == "yyyy-MM") {
 					return `${date.getFullYear()}/${date.getMonth() + 1}`;
-				} else if (format == 'MM-dd') {
+				} else if (format == "MM-dd") {
 					return `${date.getMonth() + 1}/${date.getDate()}`;
-				} else if (format == 'yyyy-MM-dd HH:mm') {
+				} else if (format == "yyyy-MM-dd HH:mm") {
 					return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}/${date.getMinutes()}`;
-				} else if (format == 'yyyy-MM-dd HH') {
+				} else if (format == "yyyy-MM-dd HH") {
 					return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()} ${date.getHours()}`;
 				}
-			}
+			},
 		}
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
-		text-align: left;
 		padding: 0.625rem;
-		background-color: #F8F8F8;
+		background-color: #f8f8f8;
+		text-align: left;
 	}
 
 	.item-wrapper {

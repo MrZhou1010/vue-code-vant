@@ -1,5 +1,5 @@
 <template>
-	<div class="numberKeyboard">
+	<div class="password-input">
 		<van-nav-bar style="background-color: lightblue;" left-arrow fixed border safe-area-inset-top :title="title"
 			@click-left="goBack()">
 		</van-nav-bar>
@@ -42,32 +42,31 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '',
+				title: "",
 				showKeyboard1: false,
-				value1: '',
+				value1: "",
 				showKeyboard2: false,
-				value2: '',
+				value2: "",
 				showKeyboard3: false,
-				value3: '',
+				value3: "",
 				showKeyboard4: false,
-				value4: '',
+				value4: "",
 				showKeyboard5: false,
-				value5: '',
+				value5: "",
 				showKeyboard6: false,
-				value6: '',
-				errorInfo: '',
-			}
+				value6: "",
+				errorInfo: "",
+			};
 		},
 		watch: {
 			value5(value) {
-				this.errorInfo = value.length === 6 && value !== '123456' ? '密码错误' : '';
+				this.errorInfo = value.length === 6 && value !== "123456" ? "密码错误" : "";
 			}
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
 		methods: {
@@ -78,12 +77,12 @@
 	}
 </script>
 
-<style scoped lang="less">
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
 		padding: 0.625rem;
+		background-color: #f8f8f8;
 		text-align: left;
-		background-color: #F8F8F8;
 	}
 
 	.van-number-keyboard__header {

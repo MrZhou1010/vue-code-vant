@@ -81,10 +81,10 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '',
+				title: "",
 				checked1: false,
 				checked2: false,
 				checked3: false,
@@ -97,13 +97,12 @@
 				result3: [],
 				result4: [],
 				result5: [],
-				activeIcon: 'https://img01.yzcdn.cn/vant/user-active.png',
-				inactiveIcon: 'https://img01.yzcdn.cn/vant/user-inactive.png',
-				list: ['a', 'b', 'c']
-			}
+				activeIcon: "https://img01.yzcdn.cn/vant/user-active.png",
+				inactiveIcon: "https://img01.yzcdn.cn/vant/user-inactive.png",
+				list: ["a", "b", "c"]
+			};
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
 		methods: {
@@ -126,12 +125,12 @@
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
 		padding: 0.625rem;
+		background-color: #f8f8f8;
 		text-align: left;
-		background-color: #F8F8F8;
 	}
 
 	.item-checkbox {

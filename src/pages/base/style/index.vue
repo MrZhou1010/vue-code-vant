@@ -77,19 +77,18 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '',
+				title: "",
 				visible1: false,
 				visible2: false,
 				visible3: false,
 				visible4: false,
 				visible5: false,
-			}
+			};
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
 		methods: {
@@ -100,12 +99,12 @@
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
 		padding: 0.625rem;
+		background-color: #f8f8f8;
 		text-align: left;
-		background-color: #F8F8F8;
 	}
 
 	.content-ellipsis {

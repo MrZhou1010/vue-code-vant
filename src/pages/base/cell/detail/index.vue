@@ -8,14 +8,13 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '详情页面',
-			}
+				title: "详情页面",
+			};
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			if (this.$route.query.title) {
 				this.title = this.$route.query.title;
 			}
@@ -24,10 +23,9 @@
 			goBack() {
 				this.$router.goBack();
 			},
-		},
+		}
 	}
 </script>
 
-<style scoped>
-
+<style lang="less" scoped>
 </style>

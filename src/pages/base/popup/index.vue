@@ -55,10 +55,10 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '',
+				title: "",
 				show1: false,
 				show2: false,
 				show3: false,
@@ -68,11 +68,10 @@
 				show7: false,
 				show8: false,
 				show9: false,
-				position: 'center'
-			}
+				position: "center"
+			};
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
 		methods: {
@@ -80,7 +79,7 @@
 				this.$router.goBack();
 			},
 			showPopup(str) {
-				if (str === 'center') {
+				if (str === "center") {
 					this.show1 = true;
 				} else {
 					this.position = str;
@@ -88,24 +87,24 @@
 				}
 			},
 			onClick() {
-				this.$toast('popup被点击');
+				this.$toast("popup被点击");
 			},
 			onClickOverlay() {
-				this.$toast('popup overlay被点击');
+				this.$toast("popup overlay被点击");
 			},
 			onClickCloseIcon() {
-				this.$toast('popup close icon被点击');
+				this.$toast("popup close icon被点击");
 			},
 		}
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
 		padding: 0.625rem;
+		background-color: #f8f8f8;
 		text-align: left;
-		background-color: #F8F8F8;
 	}
 
 	.item-cell {

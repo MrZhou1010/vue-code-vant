@@ -20,8 +20,8 @@
 						<br /><br />
 						<!-- 图标颜色 -->
 						<div style="color: #666666;">图标颜色</div>
-						<van-icon class="item-icon" name="cart-o" color="#1989FF" />
-						<van-icon class="item-icon" name="fire-o" color="#FFAA00" />
+						<van-icon class="item-icon" name="cart-o" color="#1989ff" />
+						<van-icon class="item-icon" name="fire-o" color="#ffaa00" />
 						<br /><br />
 						<!-- 图标大小 -->
 						<div style="color: #666666;">图标大小</div>
@@ -55,11 +55,11 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '',
-				tabs: ['用法示例', '基础图标', '线框风格', '实底风格'],
+				title: "",
+				tabs: ["用法示例", "基础图标", "线框风格", "实底风格"],
 				basics: ["arrow", "arrow-left", "arrow-up", "arrow-down", "success", "cross", "plus", "minus", "fail",
 					"circle"
 				],
@@ -96,10 +96,9 @@
 					"invitation", "play", "pause", "stop", "weapp-nav", "ascending", "descending", "bars", "wap-nav",
 					"enlarge", "photo-fail", "sort"
 				]
-			}
+			};
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
 		methods: {
@@ -107,18 +106,18 @@
 				this.$router.goBack();
 			},
 			onClick() {
-				this.$toast('icon被点击');
+				this.$toast("icon被点击");
 			},
 		}
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
 		padding: 0.625rem;
+		background-color: #f8f8f8;
 		text-align: left;
-		background-color: #F8F8F8;
 	}
 
 	.tab-content {
@@ -135,11 +134,11 @@
 	}
 
 	.item-col {
+		padding: 0.625rem;
 		display: inline-block;
 		float: none;
 		text-align: center;
 		vertical-align: middle;
 		cursor: pointer;
-		padding: 0.625rem;
 	}
 </style>

@@ -76,49 +76,48 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '',
+				title: "",
 				show1: false,
-				dateFlag1: '',
-				singleDate1: '',
-				multiplDate1: '',
-				rangeDate1: '',
+				dateFlag1: "",
+				singleDate1: "",
+				multiplDate1: "",
+				rangeDate1: "",
 				show2: false,
-				dateFlag2: '',
-				singleDate2: '',
-				multiplDate2: '',
-				rangeDate2: '',
+				dateFlag2: "",
+				singleDate2: "",
+				multiplDate2: "",
+				rangeDate2: "",
 				show3: false,
-				date3: '',
+				date3: "",
 				show4: false,
-				date4: '',
+				date4: "",
 				show5: false,
-				date5: '',
+				date5: "",
 				show6: false,
-				date6: '',
+				date6: "",
 				show7: false,
-				date7: '',
+				date7: "",
 				show8: false,
-				date8: '',
+				date8: "",
 				show9: false,
-				date9: '',
+				date9: "",
 				show10: false,
-				date10: '',
+				date10: "",
 				show11: false,
-				date11: '',
+				date11: "",
 				show12: false,
-				date12: '',
+				date12: "",
 				show13: false,
-				date13: '',
+				date13: "",
 				minDate: new Date(2020, 0, 1),
 				maxDate: new Date(2022, 12, 31),
 				defaultRangeDate: [new Date(2022, 4, 10), new Date(2022, 4, 20)]
-			}
+			};
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
 		mounted() {
@@ -137,19 +136,19 @@
 				if (date.getFullYear() == currentDate.getFullYear() &&
 					date.getMonth() == currentDate.getMonth() &&
 					date.getDate() == currentDate.getDate()) {
-					day.text = '今天';
+					day.text = "今天";
 				}
 				if ((date.getMonth() + 1) === 5) {
 					if (date.getDate() === 1) {
-						day.topInfo = '劳动节';
+						day.topInfo = "劳动节";
 					} else if (date.getDate() === 4) {
-						day.topInfo = '青年节';
+						day.topInfo = "青年节";
 					}
 				}
-				if (day.type === 'start') {
-					day.bottomInfo = '进入';
-				} else if (day.type === 'end') {
-					day.bottomInfo = '离开';
+				if (day.type === "start") {
+					day.bottomInfo = "进入";
+				} else if (day.type === "end") {
+					day.bottomInfo = "离开";
 				}
 				return day;
 			},
@@ -162,101 +161,101 @@
 				calendar.scrollToDate(new Date(2022, 6, 10));
 			},
 			onSelect(date) {
-				console.log('date:', date);
+				console.log("date:", date);
 			},
 			onConfirm1(date) {
 				this.show1 = false;
-				if (this.dateFlag1 === 'single') {
+				if (this.dateFlag1 === "single") {
 					this.singleDate1 = this.formatDate(date);
-				} else if (this.dateFlag1 === 'multiple') {
+				} else if (this.dateFlag1 === "multiple") {
 					const tempDate = date.map(d => {
 						return this.formatDate(d);
 					});
-					this.multiplDate1 = tempDate.sort().join(',');
-				} else if (this.dateFlag1 === 'range') {
+					this.multiplDate1 = tempDate.sort().join(",");
+				} else if (this.dateFlag1 === "range") {
 					const [start, end] = date;
-					this.rangeDate1 = this.formatDate(start) + '~' + this.formatDate(end);
+					this.rangeDate1 = this.formatDate(start) + "~" + this.formatDate(end);
 				}
 			},
 			onConfirm2(date) {
 				this.show2 = false;
-				if (this.dateFlag2 === 'single') {
+				if (this.dateFlag2 === "single") {
 					this.singleDate2 = this.formatDate(date);
-				} else if (this.dateFlag2 === 'multiple') {
+				} else if (this.dateFlag2 === "multiple") {
 					const tempDate = date.map(d => {
 						return this.formatDate(d);
 					});
-					this.multiplDate2 = tempDate.sort().join(',');
-				} else if (this.dateFlag2 === 'range') {
+					this.multiplDate2 = tempDate.sort().join(",");
+				} else if (this.dateFlag2 === "range") {
 					const [start, end] = date;
-					this.rangeDate2 = this.formatDate(start) + '~' + this.formatDate(end);
+					this.rangeDate2 = this.formatDate(start) + "~" + this.formatDate(end);
 				}
 			},
 			onConfirm3(date) {
 				this.show3 = false;
 				const [start, end] = date;
-				this.date3 = this.formatDate(start) + '~' + this.formatDate(end);
+				this.date3 = this.formatDate(start) + "~" + this.formatDate(end);
 			},
 			onConfirm4(date) {
 				this.show4 = false;
 				const [start, end] = date;
-				this.date4 = this.formatDate(start) + '~' + this.formatDate(end);
+				this.date4 = this.formatDate(start) + "~" + this.formatDate(end);
 			},
 			onConfirm5(date) {
 				this.show5 = false;
 				const [start, end] = date;
-				this.date5 = this.formatDate(start) + '~' + this.formatDate(end);
+				this.date5 = this.formatDate(start) + "~" + this.formatDate(end);
 			},
 			onConfirm6(date) {
 				this.show6 = false;
 				const [start, end] = date;
-				this.date6 = this.formatDate(start) + '~' + this.formatDate(end);
+				this.date6 = this.formatDate(start) + "~" + this.formatDate(end);
 			},
 			onConfirm7(date) {
 				this.show7 = false;
 				const [start, end] = date;
-				this.date7 = this.formatDate(start) + '~' + this.formatDate(end);
+				this.date7 = this.formatDate(start) + "~" + this.formatDate(end);
 			},
 			onConfirm8(date) {
 				this.show8 = false;
 				const [start, end] = date;
-				this.date8 = this.formatDate(start) + '~' + this.formatDate(end);
+				this.date8 = this.formatDate(start) + "~" + this.formatDate(end);
 			},
 			onConfirm9(date) {
 				this.show9 = false;
 				const [start, end] = date;
-				this.date9 = this.formatDate(start) + '~' + this.formatDate(end);
+				this.date9 = this.formatDate(start) + "~" + this.formatDate(end);
 			},
 			onConfirm10(date) {
 				this.show10 = false;
 				const [start, end] = date;
-				this.date10 = this.formatDate(start) + '~' + this.formatDate(end);
+				this.date10 = this.formatDate(start) + "~" + this.formatDate(end);
 			},
 			onConfirm11(date) {
 				this.show11 = false;
 				const [start, end] = date;
-				this.date11 = this.formatDate(start) + '~' + this.formatDate(end);
+				this.date11 = this.formatDate(start) + "~" + this.formatDate(end);
 			},
 			onConfirm12(date) {
 				this.show12 = false;
 				const [start, end] = date;
-				this.date12 = this.formatDate(start) + '~' + this.formatDate(end);
+				this.date12 = this.formatDate(start) + "~" + this.formatDate(end);
 			},
 			onConfirm13(date) {
 				this.show13 = false;
 				const [start, end] = date;
-				this.date13 = this.formatDate(start) + '~' + this.formatDate(end);
+				this.date13 = this.formatDate(start) + "~" + this.formatDate(end);
 			},
 		}
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
 		padding: 0.625rem;
+		background-color: #f8f8f8;
 		text-align: left;
-		background-color: #F8F8F8;
 	}
 
 	.content-box {

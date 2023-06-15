@@ -87,40 +87,39 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '',
-				value: '',
-				text: '',
-				tel: '',
-				digit: '',
-				number: '',
-				password: '',
-				username: '',
-				phone: '',
-				sms: '',
+				title: "",
+				value: "",
+				text: "",
+				tel: "",
+				digit: "",
+				number: "",
+				password: "",
+				username: "",
+				phone: "",
+				sms: "",
 				isError: false,
-				errorMessage: '',
-				message: '',
-			}
+				errorMessage: "",
+				message: "",
+			};
 		},
 		watch: {
 			username(val) {
-				if (val == '') {
+				if (val == "") {
 					return this.isError = false;
 				}
 				this.isError = !/^[A-Za-z0-9]+$/.test(val);
 			},
 			phone(val) {
-				if (val == '') {
-					return this.errorMessage = '';
+				if (val == "") {
+					return this.errorMessage = "";
 				}
-				this.errorMessage = !/^(13[0-9]|14[5|7]|15[0-9]|18[0-9]|19[4|5])\d{8}$/.test(val) ? '手机号格式错误' : '';
+				this.errorMessage = !/^(13[0-9]|14[5|7]|15[0-9]|18[0-9]|19[4|5])\d{8}$/.test(val) ? "手机号格式错误" : "";
 			}
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
 		mounted() {
@@ -132,21 +131,21 @@
 			},
 			formatter(value) {
 				// 过滤输入的数字
-				return value.replace(/\d/g, '');
+				return value.replace(/\d/g, "");
 			},
 			onClear() {
-				this.value = '';
+				this.value = "";
 			},
 		}
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
 		padding: 0.625rem;
+		background-color: #f8f8f8;
 		text-align: left;
-		background-color: #F8F8F8;
 	}
 
 	.item-wrapper {

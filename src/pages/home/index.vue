@@ -12,7 +12,7 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
 				groups: [{
@@ -270,19 +270,19 @@
 						className: "hide-in-weapp"
 					}]
 				}]
-			}
+			};
 		},
 		methods: {
 			togoPage(item) {
 				this.$router.togo(item.path, {
 					title: item.title
 				});
-			}
+			},
 		}
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.home {
 		padding: 1.25rem 0;
 		background-color: white;
@@ -294,30 +294,30 @@
 
 	.group-title {
 		padding-left: 0.625rem;
-		color: #333333;
-		text-align: left;
 		font-size: 1rem;
 		font-weight: 600;
 		line-height: 1rem;
+		color: #333333;
+		text-align: left;
 	}
 
 	.item {
+		height: 2.5rem;
+		margin: 0.625rem 1rem;
 		display: flex;
 		color: black;
-		height: 2.5rem;
-		background-color: #efefef;
-		margin: 0.625rem 1rem;
+		background-color: #eeeeee;
 		border-radius: 1.25rem;
 		text-align: left;
 		align-items: center;
 	}
 
 	.item-title {
+		position: relative;
 		width: 80%;
 		height: 1.25rem;
-		position: relative;
-		text-align: left;
 		margin-left: 1rem;
+		text-align: left;
 	}
 
 	.item-arrow {

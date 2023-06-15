@@ -35,8 +35,9 @@
 			</van-cell-group>
 			<!-- 页面导航 -->
 			<van-cell-group title="页面导航">
-				<van-cell title="URL跳转" is-link :url="url" />
-				<van-cell title="路由跳转" is-link to="/cell/detail" :replace="true" />
+				<van-cell title="URL跳转" is-link :replace="true" :url="url" />
+				<van-cell title="路由跳转" is-link :replace="false" :to="'/cell/detail'" />
+				<van-cell title="路由跳转" is-link @click="gotoDetail()" />
 			</van-cell-group>
 			<!-- 使用插槽 -->
 			<van-cell-group title="使用插槽">
@@ -74,15 +75,14 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '',
-				url: 'http://www.baidu.com'
-			}
+				title: "",
+				url: "http://www.baidu.com"
+			};
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
 		methods: {
@@ -90,18 +90,21 @@
 				this.$router.goBack();
 			},
 			onClick() {
-				this.$toast('cell被点击');
+				this.$toast("cell被点击");
+			},
+			gotoDetail() {
+				this.$router.togo("/cell/detail");
 			},
 		}
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
 		padding: 0.625rem;
+		background-color: #f8f8f8;
 		text-align: left;
-		background-color: #F8F8F8;
 	}
 
 	.custom-title {

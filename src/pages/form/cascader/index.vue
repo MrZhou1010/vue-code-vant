@@ -45,75 +45,74 @@
 
 <script>
 	export default {
-		name: '',
+		name: "",
 		data() {
 			return {
-				title: '',
+				title: "",
 				show1: false,
-				fieldValue1: '',
-				cascaderValue1: '',
+				fieldValue1: "",
+				cascaderValue1: "",
 				show2: false,
-				fieldValue2: '',
-				cascaderValue2: '',
+				fieldValue2: "",
+				cascaderValue2: "",
 				show3: false,
-				fieldValue3: '',
-				cascaderValue3: '',
+				fieldValue3: "",
+				cascaderValue3: "",
 				show4: false,
-				fieldValue4: '',
-				cascaderValue4: '',
+				fieldValue4: "",
+				cascaderValue4: "",
 				fieldNames: {
-					text: 'name',
-					value: 'code',
-					children: 'items',
+					text: "name",
+					value: "code",
+					children: "items",
 				},
 				// 选项列表children代表子选项支持多级嵌套
 				options: [{
-						text: '湖北省',
-						value: '420000',
+						text: "湖北省",
+						value: "420000",
 						children: [{
-							text: '武汉市',
-							value: '420200',
+							text: "武汉市",
+							value: "420200",
 							children: [{
-								text: '江岸区',
-								value: '420222'
+								text: "江岸区",
+								value: "420222"
 							}]
 						}],
 					},
 					{
-						text: '江苏省',
-						value: '320000',
+						text: "江苏省",
+						value: "320000",
 						children: [{
-							text: '南京市',
-							value: '320100',
+							text: "南京市",
+							value: "320100",
 							children: []
 						}],
 					},
 				],
 				newOptions: [{
-						name: '湖北省',
-						code: '420000',
+						name: "湖北省",
+						code: "420000",
 						items: [{
-							name: '武汉市',
-							code: '420200',
+							name: "武汉市",
+							code: "420200",
 							items: [{
-								name: '江岸区',
-								code: '420222'
+								name: "江岸区",
+								code: "420222"
 							}]
 						}],
 					},
 					{
-						name: '江苏省',
-						code: '320000',
+						name: "江苏省",
+						code: "320000",
 						items: [{
-							name: '南京市',
-							code: '320100',
+							name: "南京市",
+							code: "320100",
 						}],
 					},
 				],
-			}
+			};
 		},
 		created() {
-			console.log('query:', this.$route.query);
 			this.title = this.$route.query.title;
 		},
 		methods: {
@@ -125,25 +124,25 @@
 				selectedOptions
 			}) {
 				this.show1 = false;
-				this.fieldValue1 = selectedOptions.map((option) => option.text).join('/');
+				this.fieldValue1 = selectedOptions.map((option) => option.text).join("/");
 			},
 			onFinish2({
 				selectedOptions
 			}) {
 				this.show2 = false;
-				this.fieldValue2 = selectedOptions.map((option) => option.text).join('/');
+				this.fieldValue2 = selectedOptions.map((option) => option.text).join("/");
 			},
 			onFinish3({
 				selectedOptions
 			}) {
 				this.show3 = false;
-				this.fieldValue3 = selectedOptions.map((option) => option.text).join('/');
+				this.fieldValue3 = selectedOptions.map((option) => option.text).join("/");
 			},
 			onFinish4({
 				selectedOptions
 			}) {
 				this.show4 = false;
-				this.fieldValue4 = selectedOptions.map((option) => option.name).join('/');
+				this.fieldValue4 = selectedOptions.map((option) => option.name).join("/");
 			},
 			onChange({
 				value
@@ -152,12 +151,12 @@
 					setTimeout(() => {
 						let option = this.options[1];
 						option.children[0].children = [{
-								text: '玄武区',
-								value: '320101'
+								text: "玄武区",
+								value: "320101"
 							},
 							{
-								text: '秦淮区',
-								value: '320102'
+								text: "秦淮区",
+								value: "320102"
 							},
 						];
 						this.$set(this.options, 1, option);
@@ -165,7 +164,7 @@
 				}
 			},
 			showPopup(str) {
-				if (str === 'center') {
+				if (str === "center") {
 					this.show1 = true;
 				} else {
 					this.position = str;
@@ -173,24 +172,24 @@
 				}
 			},
 			onClick() {
-				this.$toast('popup被点击');
+				this.$toast("popup被点击");
 			},
 			onClickOverlay() {
-				this.$toast('popup overlay被点击');
+				this.$toast("popup overlay被点击");
 			},
 			onClickCloseIcon() {
-				this.$toast('popup close icon被点击');
+				this.$toast("popup close icon被点击");
 			},
 		}
 	}
 </script>
 
-<style scoped>
+<style lang="less" scoped>
 	.content {
 		margin-top: 2.75rem;
 		padding: 0.625rem;
+		background-color: #f8f8f8;
 		text-align: left;
-		background-color: #F8F8F8;
 	}
 
 	.item-cell {
