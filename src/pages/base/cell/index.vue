@@ -10,7 +10,7 @@
 				<van-cell title="单元格" value="内容" label="描述信息" />
 			</van-cell-group>
 			<!-- 卡片风格 -->
-			<van-cell-group inset title="卡片风格" :border="false">
+			<van-cell-group title="卡片风格" :border="false" inset>
 				<van-cell title="单元格" value="内容" :border="true" />
 				<van-cell title="单元格" value="内容" label="描述信息" />
 			</van-cell-group>
@@ -36,7 +36,7 @@
 			<!-- 页面导航 -->
 			<van-cell-group title="页面导航">
 				<van-cell title="URL跳转" is-link :replace="true" :url="url" />
-				<van-cell title="路由跳转" is-link :replace="false" :to="'/cell/detail'" />
+				<van-cell title="路由跳转" is-link :replace="false" to="/cell/detail" />
 				<van-cell title="路由跳转" is-link @click="gotoDetail()" />
 			</van-cell-group>
 			<!-- 使用插槽 -->
