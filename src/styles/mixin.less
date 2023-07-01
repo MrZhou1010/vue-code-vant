@@ -1,0 +1,240 @@
+@baseFontSize: 75;
+
+.px2rem(@name, @px) {
+  @name: @px / @baseFontSize * 1rem;
+}
+
+.flex(@a, @b, @c) {
+  flex: @a @b @c / @baseFontSize * 1rem;
+}
+
+.b-radius(@px) {
+  border-radius: @px / @baseFontSize * 1rem;
+}
+
+.w(@px) {
+  width: @px / @baseFontSize * 1rem;
+}
+
+.h(@px) {
+  height: @px / @baseFontSize * 1rem;
+}
+
+.mh(@px) {
+  min-height: @px / @baseFontSize * 1rem;
+}
+
+.min-h(@px) {
+  min-height: @px / @baseFontSize * 1rem;
+}
+
+.max-h(@px) {
+  max-height: @px / @baseFontSize * 1rem;
+}
+
+.mt(@px) {
+  margin-top: @px / @baseFontSize * 1rem;
+}
+
+.mb(@px) {
+  margin-bottom: @px / @baseFontSize * 1rem;
+}
+
+.ml(@px) {
+  margin-left: @px / @baseFontSize * 1rem;
+}
+
+.mr(@px) {
+  margin-right: @px / @baseFontSize * 1rem;
+}
+
+.pt(@px) {
+  padding-top: @px / @baseFontSize * 1rem;
+}
+
+.pb(@px) {
+  padding-bottom: @px / @baseFontSize * 1rem;
+}
+
+.pl(@px) {
+  padding-left: @px / @baseFontSize * 1rem;
+}
+
+.pr(@px) {
+  padding-right: @px / @baseFontSize * 1rem;
+}
+
+.padding(@tbpx, @lrpx) {
+  padding: @tbpx / @baseFontSize * 1rem @lrpx / @baseFontSize * 1rem;
+}
+
+.padding(@top, @left, @bottom, @right) {
+  .pt(@top);
+  .pl(@left);
+  .pb(@bottom);
+  .pr(@right);
+}
+
+.margin(@tbpx, @lrpx) {
+  margin: @tbpx / @baseFontSize * 1rem @lrpx / @baseFontSize * 1rem;
+}
+
+.margin(@top, @left, @bottom, @right) {
+  .mt(@top);
+  .ml(@left);
+  .mb(@bottom);
+  .mr(@right);
+}
+
+.border-1px(@color) {
+  position: relative;
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    border-top: solid 1px @color;
+    content: " ";
+    @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+    }
+    @media (-webkit-min-device-pixel-ratio: 1.5),
+      (min-device-pixel-ratio: 1.5) {
+      -webkit-transform: scaleY(0.7);
+      transform: scaleY(0.7);
+    }
+  }
+}
+
+.border-right-1px(@px, @color) {
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 1 / @baseFontSize * 1rem;
+    width: @px / @baseFontSize * 1rem;
+    display: block;
+    background-color: @color;
+    content: " ";
+  }
+}
+
+.border-left-1px(@px, @color) {
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1 / @baseFontSize * 1rem;
+    width: @px / @baseFontSize * 1rem;
+    display: block;
+    background-color: @color;
+    content: " ";
+  }
+}
+
+.border-before-1px(@color) {
+  position: relative;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+    border-top: solid 1 / @baseFontSize * 1rem @color;
+    content: " ";
+  }
+}
+
+.border-npx(@color, @height) {
+  position: relative;
+  &:after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    border-top: solid @height / @baseFontSize * 1rem @color;
+    content: " ";
+  }
+}
+
+.border-none() {
+  &:after {
+    display: none;
+  }
+}
+
+.border-solid(@px, @color) {
+  border: solid @px / @baseFontSize * 1rem @color;
+}
+
+.lh(@px) {
+  line-height: @px / @baseFontSize * 1rem;
+}
+
+.fs(@px) {
+  font-size: @px / @baseFontSize * 1rem;
+}
+
+.top(@px) {
+  top: @px / @baseFontSize * 1rem;
+}
+
+.left(@px) {
+  left: @px / @baseFontSize * 1rem;
+}
+
+.bottom(@px) {
+  bottom: @px / @baseFontSize * 1rem;
+}
+
+.right(@px) {
+  right: @px / @baseFontSize * 1rem;
+}
+
+.vertical(@px) {
+  vertical-align: @px / @baseFontSize * 1rem;
+}
+
+.ellipsis() {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.ellipsis-2() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: 2;
+}
+
+.word-spacing(@px) {
+  word-spacing: @px / @baseFontSize * 1rem;
+}
+
+// 模块区
+.module-area(@height, @width:96%) {
+  width: @width;
+  .h(@height);
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 3px 4px 20px 0px rgba(88, 88, 88, 0.2);
+  box-sizing: border-box;
+}
+
+.module-area-auto(@width:96%) {
+  width: @width;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 3px 4px 20px 0px rgba(88, 88, 88, 0.2);
+  box-sizing: border-box;
+}

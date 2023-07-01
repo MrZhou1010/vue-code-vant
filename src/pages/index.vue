@@ -1,9 +1,7 @@
 <template>
-	<router-view class="router"></router-view>
+  <router-view class="router"></router-view>
 </template>
 
-<script>
-</script>
+<script></script>
 
-<style>
-</style>
+<style></style>
