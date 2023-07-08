@@ -1,7 +1,7 @@
 <template>
   <div class="swipe">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;margin: 10px 0;">基础用法</div>
+      <div style="color: #666666; margin: 10px 0">基础用法</div>
       <van-swipe class="swipe-warpper" indicator-color="white" :autoplay="3000">
         <van-swipe-item>1</van-swipe-item>
         <van-swipe-item>2</van-swipe-item>
@@ -20,14 +20,14 @@
         <van-swipe-item>4</van-swipe-item>
       </van-swipe>
       <!-- 图片懒加载 -->
-      <div style="color: #666666;margin: 10px 0;">图片懒加载</div>
+      <div style="color: #666666; margin: 10px 0">图片懒加载</div>
       <van-swipe class="swipe-image-warpper" :autoplay="3000">
         <van-swipe-item v-for="(image, index) in images" :key="index">
           <img v-lazy="image" />
         </van-swipe-item>
       </van-swipe>
       <!-- 监听 change 事件 -->
-      <div style="color: #666666;margin: 10px 0;">监听 change 事件</div>
+      <div style="color: #666666; margin: 10px 0">监听 change 事件</div>
       <van-swipe
         class="swipe-warpper"
         indicator-color="white"
@@ -39,7 +39,7 @@
         <van-swipe-item>4</van-swipe-item>
       </van-swipe>
       <!-- 纵向滚动 -->
-      <div style="color: #666666;margin: 10px 0;">纵向滚动</div>
+      <div style="color: #666666; margin: 10px 0">纵向滚动</div>
       <van-swipe
         class="swipe-warpper"
         indicator-color="white"
@@ -52,7 +52,7 @@
         <van-swipe-item>4</van-swipe-item>
       </van-swipe>
       <!-- 自定义滑块大小 -->
-      <div style="color: #666666;margin: 10px 0;">自定义滑块大小</div>
+      <div style="color: #666666; margin: 10px 0">自定义滑块大小</div>
       <van-swipe
         class="swipe-warpper"
         indicator-color="white"
@@ -66,7 +66,7 @@
         <van-swipe-item>4</van-swipe-item>
       </van-swipe>
       <!-- 自定义指示器 -->
-      <div style="color: #666666;margin: 10px 0;">自定义指示器</div>
+      <div style="color: #666666; margin: 10px 0">自定义指示器</div>
       <van-swipe class="swipe-warpper" :autoplay="3000" @change="onChange">
         <van-swipe-item>1</van-swipe-item>
         <van-swipe-item>2</van-swipe-item>
@@ -112,13 +112,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .swipe-warpper {
   width: 100%;

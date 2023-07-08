@@ -1,7 +1,7 @@
 <template>
   <div class="detail">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border

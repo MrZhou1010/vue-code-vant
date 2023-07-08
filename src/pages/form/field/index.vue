@@ -1,7 +1,7 @@
 <template>
   <div class="field">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;margin: 0.5rem 0;">基础用法</div>
+      <div style="color: #666666; margin: 0.5rem 0">基础用法</div>
       <van-cell-group class="item-wrapper">
         <van-field
           v-model="value"
@@ -23,7 +23,7 @@
         />
       </van-cell-group>
       <!-- 自定义类型 -->
-      <div style="color: #666666;margin: 0.5rem 0;">自定义类型</div>
+      <div style="color: #666666; margin: 0.5rem 0">自定义类型</div>
       <div class="item-wrapper">
         <!-- 输入任意文本 -->
         <van-field
@@ -65,13 +65,13 @@
         />
       </div>
       <!-- 禁用输入框 -->
-      <div style="color: #666666;margin: 0.5rem 0;">禁用输入框</div>
+      <div style="color: #666666; margin: 0.5rem 0">禁用输入框</div>
       <div class="item-wrapper">
         <van-field label="文本" value="输入框只读" readonly />
         <van-field label="文本" value="输入框已禁用" disabled />
       </div>
       <!-- 显示图标 -->
-      <div style="color: #666666;margin: 0.5rem 0;">显示图标</div>
+      <div style="color: #666666; margin: 0.5rem 0">显示图标</div>
       <div class="item-wrapper">
         <van-field
           v-model="value"
@@ -90,7 +90,7 @@
         />
       </div>
       <!-- 错误提示 -->
-      <div style="color: #666666;margin: 0.5rem 0;">错误提示</div>
+      <div style="color: #666666; margin: 0.5rem 0">错误提示</div>
       <div class="item-wrapper">
         <van-field
           v-model="username"
@@ -109,7 +109,7 @@
         />
       </div>
       <!-- 插入按钮 -->
-      <div style="color: #666666;margin: 0.5rem 0;">插入按钮</div>
+      <div style="color: #666666; margin: 0.5rem 0">插入按钮</div>
       <div class="item-wrapper">
         <van-field
           v-model="sms"
@@ -124,7 +124,7 @@
         </van-field>
       </div>
       <!-- 格式化输入内容 -->
-      <div style="color: #666666;margin: 0.5rem 0;">格式化输入内容</div>
+      <div style="color: #666666; margin: 0.5rem 0">格式化输入内容</div>
       <div class="item-wrapper">
         <van-field
           v-model="text"
@@ -141,7 +141,7 @@
         />
       </div>
       <!-- 高度自适应 -->
-      <div style="color: #666666;margin: 0.5rem 0;">高度自适应</div>
+      <div style="color: #666666; margin: 0.5rem 0">高度自适应</div>
       <div class="item-wrapper">
         <van-field
           v-model="message"
@@ -153,7 +153,7 @@
         />
       </div>
       <!-- 显示字数统计 -->
-      <div style="color: #666666;margin: 0.5rem 0;">显示字数统计</div>
+      <div style="color: #666666; margin: 0.5rem 0">显示字数统计</div>
       <div class="item-wrapper">
         <van-field
           v-model="message"
@@ -167,7 +167,7 @@
         />
       </div>
       <!-- 输入框内容对齐 -->
-      <div style="color: #666666;margin: 0.5rem 0;">输入框内容对齐</div>
+      <div style="color: #666666; margin: 0.5rem 0">输入框内容对齐</div>
       <div class="item-wrapper">
         <van-field
           v-model="value"
@@ -178,7 +178,7 @@
         />
       </div>
       <!-- 是否展示右侧箭头并开启点击反馈 -->
-      <div style="color: #666666;margin: 0.5rem 0;">
+      <div style="color: #666666; margin: 0.5rem 0">
         是否展示右侧箭头并开启点击反馈
       </div>
       <div class="item-wrapper">
@@ -231,11 +231,10 @@ export default {
       if (val == "") {
         return (this.errorMessage = "");
       }
-      this.errorMessage = !/^(13[0-9]|14[5|7]|15[0-9]|18[0-9]|19[4|5])\d{8}$/.test(
-        val
-      )
-        ? "手机号格式错误"
-        : "";
+      this.errorMessage =
+        !/^(13[0-9]|14[5|7]|15[0-9]|18[0-9]|19[4|5])\d{8}$/.test(val)
+          ? "手机号格式错误"
+          : "";
     },
   },
   created() {
@@ -261,13 +260,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .item-wrapper {
   border-radius: 1rem;

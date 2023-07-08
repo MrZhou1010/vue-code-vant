@@ -1,7 +1,7 @@
 <template>
   <div class="slider">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,10 +12,10 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-slider class="item-slider" v-model="value1" @change="onChange1" />
       <!-- 双滑块 -->
-      <div style="color: #666666;">双滑块</div>
+      <div style="color: #666666">双滑块</div>
       <van-slider
         class="item-slider"
         v-model="value2"
@@ -23,16 +23,16 @@
         @change="onChange2"
       />
       <!-- 指定选择范围 -->
-      <div style="color: #666666;">指定选择范围</div>
+      <div style="color: #666666">指定选择范围</div>
       <van-slider class="item-slider" v-model="value3" :min="-100" :max="100" />
       <!-- 禁用 -->
-      <div style="color: #666666;">禁用</div>
+      <div style="color: #666666">禁用</div>
       <van-slider class="item-slider" v-model="value4" disabled />
       <!-- 指定步长 -->
-      <div style="color: #666666;">指定步长</div>
+      <div style="color: #666666">指定步长</div>
       <van-slider class="item-slider" v-model="value5" :step="10" />
       <!-- 自定义样式 -->
-      <div style="color: #666666;">自定义样式</div>
+      <div style="color: #666666">自定义样式</div>
       <van-slider
         class="item-slider"
         v-model="value6"
@@ -40,7 +40,7 @@
         active-color="#ee0a24"
       />
       <!-- 自定义按钮 -->
-      <div style="color: #666666;">自定义按钮</div>
+      <div style="color: #666666">自定义按钮</div>
       <van-slider
         class="item-slider"
         v-model="value7"
@@ -52,19 +52,19 @@
         </template>
       </van-slider>
       <!-- 垂直方向 -->
-      <div style="color: #666666;">垂直方向</div>
-      <div style="height: 6rem;">
+      <div style="color: #666666">垂直方向</div>
+      <div style="height: 6rem">
         <van-slider
           class="item-slider"
           v-model="value8"
-          style="margin-left: 2rem;"
+          style="margin-left: 2rem"
           vertical
           @change="onChange1"
         />
         <van-slider
           class="item-slider"
           v-model="value9"
-          style="margin-left: 6rem;"
+          style="margin-left: 6rem"
           vertical
           range
           @change="onChange2"
@@ -114,13 +114,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .item-slider {
   margin-top: 1rem;

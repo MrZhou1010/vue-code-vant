@@ -1,7 +1,7 @@
 <template>
   <div class="style">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 文字省略 -->
-      <div style="color: #666666;">文字省略</div>
+      <div style="color: #666666">文字省略</div>
       <div class="content-ellipsis">
         <!-- 最多显示一行 -->
         <div class="van-ellipsis">
@@ -31,41 +31,41 @@
       </div>
       <br />
       <!-- 1px 边框 -->
-      <div style="color: #666666;">1px 边框</div>
+      <div style="color: #666666">1px 边框</div>
       <div class="content-ellipsis">
         <!-- 上边框 -->
-        <div class="van-hairline--top" style="padding-top: 0.375rem;">
+        <div class="van-hairline--top" style="padding-top: 0.375rem">
           上边框
         </div>
         <br />
         <!-- 下边框 -->
-        <div class="van-hairline--bottom" style="padding-bottom: 0.375rem;">
+        <div class="van-hairline--bottom" style="padding-bottom: 0.375rem">
           下边框
         </div>
         <br />
         <!-- 左边框 -->
-        <div class="van-hairline--left" style="padding-left: 0.375rem;">
+        <div class="van-hairline--left" style="padding-left: 0.375rem">
           左边框
         </div>
         <br />
         <!-- 右边框 -->
-        <div class="van-hairline--right" style="padding-right: 0.375rem;">
+        <div class="van-hairline--right" style="padding-right: 0.375rem">
           右边框
         </div>
         <br />
         <!-- 上下边框 -->
-        <div class="van-hairline--top-bottom" style="padding: 0.375rem 0;">
+        <div class="van-hairline--top-bottom" style="padding: 0.375rem 0">
           上下边框
         </div>
         <br />
         <!-- 全边框 -->
-        <div class="van-hairline--surround" style="padding: 0.375rem;">
+        <div class="van-hairline--surround" style="padding: 0.375rem">
           全边框
         </div>
       </div>
       <br />
       <!-- 动画 -->
-      <div style="color: #666666;">动画</div>
+      <div style="color: #666666">动画</div>
       <div class="content-ellipsis">
         <van-cell class="item-cell" is-link @click="visible1 = true"
           >淡入</van-cell

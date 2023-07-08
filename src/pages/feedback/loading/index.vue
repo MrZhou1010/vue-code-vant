@@ -1,7 +1,7 @@
 <template>
   <div class="loading">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,55 +12,53 @@
     </van-nav-bar>
     <div class="content">
       <!-- 加载类型 -->
-      <div style="color: #666666;">加载类型</div>
-      <div style="display: flex;">
-        <van-loading style="margin: 10px;" type="circular" />
-        <van-loading style="margin: 10px;" type="spinner" />
+      <div style="color: #666666">加载类型</div>
+      <div style="display: flex">
+        <van-loading style="margin: 10px" type="circular" />
+        <van-loading style="margin: 10px" type="spinner" />
       </div>
       <!-- 自定义颜色 -->
-      <div style="color: #666666;">自定义颜色</div>
-      <div style="display: flex;">
-        <van-loading style="margin: 10px;" type="circular" color="#00ff6a" />
-        <van-loading style="margin: 10px;" type="spinner" color="#00ff6a" />
+      <div style="color: #666666">自定义颜色</div>
+      <div style="display: flex">
+        <van-loading style="margin: 10px" type="circular" color="#00ff6a" />
+        <van-loading style="margin: 10px" type="spinner" color="#00ff6a" />
       </div>
       <!-- 自定义大小 -->
-      <div style="color: #666666;">自定义大小</div>
-      <div style="display: flex;">
-        <van-loading style="margin: 10px;" type="circular" size="24" />
-        <van-loading style="margin: 10px;" type="spinner" size="24" />
+      <div style="color: #666666">自定义大小</div>
+      <div style="display: flex">
+        <van-loading style="margin: 10px" type="circular" size="24" />
+        <van-loading style="margin: 10px" type="spinner" size="24" />
       </div>
       <!-- 加载文案 -->
-      <div style="color: #666666;">加载文案</div>
-      <div style="display: flex;">
-        <van-loading style="margin: 10px;" type="circular"
+      <div style="color: #666666">加载文案</div>
+      <div style="display: flex">
+        <van-loading style="margin: 10px" type="circular"
           >加载中...</van-loading
         >
-        <van-loading style="margin: 10px;" type="spinner"
-          >加载中...</van-loading
-        >
+        <van-loading style="margin: 10px" type="spinner">加载中...</van-loading>
       </div>
       <!-- 垂直排列 -->
-      <div style="color: #666666;">垂直排列</div>
-      <div style="display: flex;">
-        <van-loading style="margin: 10px;" type="circular" vertical
+      <div style="color: #666666">垂直排列</div>
+      <div style="display: flex">
+        <van-loading style="margin: 10px" type="circular" vertical
           >加载中...</van-loading
         >
-        <van-loading style="margin: 10px;" type="spinner" vertical
+        <van-loading style="margin: 10px" type="spinner" vertical
           >加载中...</van-loading
         >
       </div>
       <!-- 自定义文案颜色 -->
-      <div style="color: #666666;">自定义文案颜色</div>
-      <div style="display: flex;">
+      <div style="color: #666666">自定义文案颜色</div>
+      <div style="display: flex">
         <van-loading
-          style="margin: 10px;"
+          style="margin: 10px"
           type="circular"
           color="#00ff6a"
           vertical
           >加载中...</van-loading
         >
         <van-loading
-          style="margin: 10px;"
+          style="margin: 10px"
           type="spinner"
           text-color="#00ff6a"
           vertical
@@ -119,20 +117,10 @@ export default {
     goBack() {
       this.$router.goBack();
     },
-    onConfirm() {
-      this.$refs.item.toggle();
-    },
   },
 };
 </script>
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 </style>

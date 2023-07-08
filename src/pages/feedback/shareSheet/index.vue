@@ -1,7 +1,7 @@
 <template>
   <div class="share-sheet">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-cell class="item-cell" is-link @click="showShareSheet1 = true"
         >显示分享面板</van-cell
       >
@@ -25,7 +25,7 @@
       </van-share-sheet>
       <br />
       <!-- 展示多行选项 -->
-      <div style="color: #666666;">展示多行选项</div>
+      <div style="color: #666666">展示多行选项</div>
       <van-cell class="item-cell" is-link @click="showShareSheet2 = true"
         >显示分享面板</van-cell
       >
@@ -39,7 +39,7 @@
       </van-share-sheet>
       <br />
       <!-- 自定义图标 -->
-      <div style="color: #666666;">自定义图标</div>
+      <div style="color: #666666">自定义图标</div>
       <van-cell class="item-cell" is-link @click="showShareSheet3 = true"
         >显示分享面板</van-cell
       >
@@ -52,7 +52,7 @@
       </van-share-sheet>
       <br />
       <!-- 展示描述信息 -->
-      <div style="color: #666666;">展示描述信息</div>
+      <div style="color: #666666">展示描述信息</div>
       <van-cell class="item-cell" is-link @click="showShareSheet4 = true"
         >显示分享面板</van-cell
       >
@@ -221,13 +221,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .item-cell {
   margin-top: 1rem;

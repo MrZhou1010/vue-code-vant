@@ -1,7 +1,7 @@
 <template>
   <div class="toast">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,8 +12,8 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
-      <div class="content-box">
+      <div style="color: #666666">基础用法</div>
+      <div class="cell-box">
         <van-cell is-link @click="$toast('提示内容')">文字提示</van-cell>
         <van-cell
           is-link
@@ -33,8 +33,8 @@
       </div>
       <br />
       <!-- 自定义图标 -->
-      <div style="color: #666666;">自定义图标</div>
-      <div class="content-box">
+      <div style="color: #666666">自定义图标</div>
+      <div class="cell-box">
         <van-cell
           is-link
           @click="$toast({ message: '自定义图标', icon: 'like-o' })"
@@ -65,8 +65,8 @@
       </div>
       <br />
       <!-- 自定义位置 -->
-      <div style="color: #666666;">自定义位置</div>
-      <div class="content-box">
+      <div style="color: #666666">自定义位置</div>
+      <div class="cell-box">
         <van-cell
           is-link
           @click="$toast({ message: '顶部展示', position: 'top' })"
@@ -80,14 +80,14 @@
       </div>
       <br />
       <!-- 动态更新提示 -->
-      <div style="color: #666666;">动态更新提示</div>
-      <div class="content-box">
+      <div style="color: #666666">动态更新提示</div>
+      <div class="cell-box">
         <van-cell is-link @click="toast()">动态更新提示</van-cell>
       </div>
       <br />
       <!-- 依次显示多个提示 -->
-      <div style="color: #666666;">依次显示多个提示</div>
-      <div class="content-box">
+      <div style="color: #666666">依次显示多个提示</div>
+      <div class="cell-box">
         <van-cell is-link @click="multipleToast()">依次显示多个提示</van-cell>
       </div>
     </div>
@@ -131,10 +131,10 @@ export default {
     },
     multipleToast() {
       const _this = this;
-      setTimeout(function() {
+      setTimeout(function () {
         _this.$toast("第一个提示内容");
       }, 500);
-      setTimeout(function() {
+      setTimeout(function () {
         _this.$toast("第二个提示内容");
       }, 3000);
     },
@@ -145,7 +145,7 @@ export default {
 <style lang="less" scoped>
 @import "~styles/common.less";
 
-.content-box {
+.cell-box {
   margin-top: 0.625rem;
   padding: 0.625rem;
   background-color: white;

@@ -1,7 +1,7 @@
 <template>
   <div class="notice-bar">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,13 +12,13 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;margin-left: 10px;">基础用法</div>
+      <div style="color: #666666; margin-left: 10px">基础用法</div>
       <van-notice-bar
         left-icon="volume-o"
         text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
       />
       <!-- 滚动播放 -->
-      <div style="color: #666666;margin-left: 10px;">滚动播放</div>
+      <div style="color: #666666; margin-left: 10px">滚动播放</div>
       <!-- 文字较短时 通过设置 scrollable 属性开启滚动播放 -->
       <van-notice-bar :scrollable="true" text="技术是开发它的人的共同灵魂。" />
       <!-- 文字较长时 通过禁用 scrollable 属性关闭滚动播放 -->
@@ -27,14 +27,14 @@
         text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
       />
       <!-- 多行展示 -->
-      <div style="color: #666666;margin-left: 10px;">多行展示</div>
+      <div style="color: #666666; margin-left: 10px">多行展示</div>
       <van-notice-bar
         :scrollable="true"
         wrapable
         text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
       />
       <!-- 通知栏模式 -->
-      <div style="color: #666666;margin-left: 10px;">通知栏模式</div>
+      <div style="color: #666666; margin-left: 10px">通知栏模式</div>
       <!-- closeable模式 在右侧显示关闭按钮 -->
       <van-notice-bar mode="closeable"
         >技术是开发它的人的共同灵魂。</van-notice-bar
@@ -42,12 +42,12 @@
       <!-- link模式 在右侧显示链接箭头 -->
       <van-notice-bar mode="link">技术是开发它的人的共同灵魂。</van-notice-bar>
       <!-- 自定义样式 -->
-      <div style="color: #666666;margin-left: 10px;">自定义样式</div>
+      <div style="color: #666666; margin-left: 10px">自定义样式</div>
       <van-notice-bar color="#ff00ee" background="#8fe0ee" left-icon="info-o">
         技术是开发它的人的共同灵魂。
       </van-notice-bar>
       <!-- 垂直滚动 -->
-      <div style="color: #666666;margin-left: 10px;">垂直滚动</div>
+      <div style="color: #666666; margin-left: 10px">垂直滚动</div>
       <van-notice-bar left-icon="volume-o" :scrollable="false">
         <van-swipe
           class="notice-swipe"

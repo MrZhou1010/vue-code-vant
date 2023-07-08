@@ -1,7 +1,7 @@
 <template>
   <div class="password-input">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;margin: 0.5rem 0;">基础用法</div>
+      <div style="color: #666666; margin: 0.5rem 0">基础用法</div>
       <!-- 密码输入框 -->
       <van-password-input
         :value="value1"
@@ -27,7 +27,7 @@
         @blur="showKeyboard1 = false"
       />
       <!-- 自定义长度 -->
-      <div style="color: #666666;margin: 0.5rem 0;">自定义长度</div>
+      <div style="color: #666666; margin: 0.5rem 0">自定义长度</div>
       <van-password-input
         :value="value2"
         :length="4"
@@ -41,7 +41,7 @@
         @blur="showKeyboard2 = false"
       />
       <!-- 格子间距 -->
-      <div style="color: #666666;margin: 0.5rem 0;">格子间距</div>
+      <div style="color: #666666; margin: 0.5rem 0">格子间距</div>
       <van-password-input
         :value="value3"
         :gutter="10"
@@ -55,7 +55,7 @@
         @blur="showKeyboard3 = false"
       />
       <!-- 明文展示 -->
-      <div style="color: #666666;margin: 0.5rem 0;">明文展示</div>
+      <div style="color: #666666; margin: 0.5rem 0">明文展示</div>
       <van-password-input
         :value="value4"
         :mask="false"
@@ -69,7 +69,7 @@
         @blur="showKeyboard4 = false"
       />
       <!-- 提示信息 -->
-      <div style="color: #666666;margin: 0.5rem 0;">提示信息</div>
+      <div style="color: #666666; margin: 0.5rem 0">提示信息</div>
       <van-password-input
         :value="value5"
         info="密码为6位数字"
@@ -84,7 +84,7 @@
         @blur="showKeyboard5 = false"
       />
       <!-- 输入框放置在数字键盘标题上面 -->
-      <div style="color: #666666;margin: 0.5rem 0;">
+      <div style="color: #666666; margin: 0.5rem 0">
         输入框放置在数字键盘标题上面
       </div>
       <van-cell
@@ -148,13 +148,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .van-number-keyboard__header {
   height: 46px;

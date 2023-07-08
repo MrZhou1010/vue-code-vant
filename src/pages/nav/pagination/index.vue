@@ -1,7 +1,7 @@
 <template>
   <div class="pagination">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,28 +12,25 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666; margin: 10px 0">基础用法</div>
       <van-pagination
         v-model="currentPage1"
         :total-items="27"
         :items-per-page="5"
       />
-      <br /><br />
       <!-- 简单模式 -->
-      <div style="color: #666666;">简单模式</div>
-      <van-pagination v-model="currentPage2" :page-count="12" mode="simple" />
-      <br /><br />
+      <div style="color: #666666; margin: 10px 0">简单模式</div>
+      <van-pagination v-model="currentPage2" mode="simple" :page-count="12" />
       <!-- 显示省略号 -->
-      <div style="color: #666666;">显示省略号</div>
+      <div style="color: #666666; margin: 10px 0">显示省略号</div>
       <van-pagination
         v-model="currentPage3"
         :total-items="125"
         :show-page-size="2"
         force-ellipses
       />
-      <br /><br />
       <!-- 自定义按钮 -->
-      <div style="color: #666666;">自定义按钮</div>
+      <div style="color: #666666; margin: 10px 0">自定义按钮</div>
       <van-pagination
         v-model="currentPage4"
         :total-items="122"
@@ -48,7 +45,6 @@
         </template>
         <template #page="{ text }">{{ text }}</template>
       </van-pagination>
-      <br /><br />
     </div>
   </div>
 </template>
@@ -78,13 +74,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .van-pagination__item {
   width: 36px;

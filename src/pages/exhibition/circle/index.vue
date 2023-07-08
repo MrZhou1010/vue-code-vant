@@ -1,7 +1,7 @@
 <template>
   <div class="circle">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,35 +12,35 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
-      <div style="display: flex;">
+      <div style="color: #666666">基础用法</div>
+      <div style="display: flex">
         <van-circle
           v-model="currentRate1"
-          style="margin: 10px;"
+          style="margin: 10px"
           :rate="60"
           :text="text1"
         />
         <van-circle
           v-model="currentRate2"
-          style="margin: 10px;"
+          style="margin: 10px"
           :rate="80"
           :speed="10"
           :text="text2"
         />
       </div>
       <!-- 样式定制 -->
-      <div style="color: #666666;">样式定制</div>
-      <div style="display: flex;">
+      <div style="color: #666666">样式定制</div>
+      <div style="display: flex">
         <van-circle
           v-model="currentRate3"
-          style="margin: 10px;"
+          style="margin: 10px"
           :rate="60"
           :stroke-width="60"
           text="宽度定制"
         />
         <van-circle
           v-model="currentRate4"
-          style="margin: 10px;"
+          style="margin: 10px"
           :rate="80"
           text="颜色定制"
           color="#00ff6a"
@@ -48,23 +48,23 @@
         />
         <van-circle
           v-model="currentRate5"
-          style="margin: 10px;"
+          style="margin: 10px"
           :rate="60"
           :color="gradientColor"
           text="渐变色"
         />
       </div>
-      <div style="display: flex;">
+      <div style="display: flex">
         <van-circle
           v-model="currentRate3"
-          style="margin: 10px;"
+          style="margin: 10px"
           :rate="60"
           stroke-linecap="butt"
           text="端点形状"
         />
         <van-circle
           v-model="currentRate6"
-          style="margin: 10px;"
+          style="margin: 10px"
           :rate="60"
           :speed="10"
           :clockwise="false"
@@ -72,7 +72,7 @@
         />
         <van-circle
           v-model="currentRate7"
-          style="margin: 10px;"
+          style="margin: 10px"
           :rate="80"
           :speed="20"
           text="大小定制"
@@ -80,11 +80,11 @@
         />
       </div>
       <!-- 定时器随机数 -->
-      <div style="color: #666666;">定时器随机数</div>
-      <div style="display: flex;">
+      <div style="color: #666666">定时器随机数</div>
+      <div style="display: flex">
         <van-circle
           v-model="currentRate8"
-          style="margin: 10px;"
+          style="margin: 10px"
           :rate="100"
           :text="text8"
           :color="gradientColor"
@@ -160,17 +160,4 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.child {
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  background: #c2c2c2;
-}
-
-.badge-icon {
-  font-size: 10px;
-  line-height: 16px;
-  display: block;
-}
 </style>

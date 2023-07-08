@@ -1,7 +1,7 @@
 <template>
   <div class="icon">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -15,7 +15,7 @@
         <van-tab v-for="(tab, index) in tabs" :key="index" :title="tab">
           <div class="tab-content" v-if="index === 0">
             <!-- 基础用法 -->
-            <div style="color: #666666;">基础用法</div>
+            <div style="color: #666666">基础用法</div>
             <van-icon class="item-icon" name="chat-o" />
             <van-icon
               class="item-icon"
@@ -23,18 +23,18 @@
             />
             <br /><br />
             <!-- 徽标提示 -->
-            <div style="color: #666666;">徽标提示</div>
+            <div style="color: #666666">徽标提示</div>
             <van-icon class="item-icon" name="chat-o" dot />
             <van-icon class="item-icon" name="chat-o" badge="9" />
             <van-icon class="item-icon" name="chat-o" badge="99+" />
             <br /><br />
             <!-- 图标颜色 -->
-            <div style="color: #666666;">图标颜色</div>
+            <div style="color: #666666">图标颜色</div>
             <van-icon class="item-icon" name="cart-o" color="#1989ff" />
             <van-icon class="item-icon" name="fire-o" color="#ffaa00" />
             <br /><br />
             <!-- 图标大小 -->
-            <div style="color: #666666;">图标大小</div>
+            <div style="color: #666666">图标大小</div>
             <van-icon
               class="item-icon"
               name="chat-o"

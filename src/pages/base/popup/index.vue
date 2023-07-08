@@ -1,7 +1,7 @@
 <template>
   <div class="popup">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,14 +12,14 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-cell class="item-cell" is-link @click="showPopup('center')"
         >展示弹出层</van-cell
       >
       <van-popup v-model="show1" class="popup-content"></van-popup>
       <br />
       <!-- 弹出位置 -->
-      <div style="color: #666666;">弹出位置</div>
+      <div style="color: #666666">弹出位置</div>
       <van-cell class="item-cell" is-link @click="showPopup('top')"
         >顶部弹出</van-cell
       >
@@ -39,7 +39,7 @@
       ></van-popup>
       <br />
       <!-- 关闭图标 -->
-      <div style="color: #666666;">关闭图标</div>
+      <div style="color: #666666">关闭图标</div>
       <van-cell class="item-cell" is-link @click="show3 = true"
         >关闭图标</van-cell
       >
@@ -73,7 +73,7 @@
       </van-popup>
       <br />
       <!-- 圆角弹窗 -->
-      <div style="color: #666666;">圆角弹窗</div>
+      <div style="color: #666666">圆角弹窗</div>
       <van-cell class="item-cell" is-link @click="show6 = true"
         >圆角弹窗</van-cell
       >
@@ -85,7 +85,7 @@
       ></van-popup>
       <br />
       <!-- 指定挂载节点 -->
-      <div style="color: #666666;">指定挂载节点</div>
+      <div style="color: #666666">指定挂载节点</div>
       <van-cell class="item-cell" is-link @click="show7 = true"
         >指定挂载节点</van-cell
       >
@@ -96,7 +96,7 @@
       ></van-popup>
       <br />
       <!-- 是否显示遮罩层 -->
-      <div style="color: #666666;">是否显示遮罩层</div>
+      <div style="color: #666666">是否显示遮罩层</div>
       <van-cell class="item-cell" is-link @click="show8 = true"
         >是否显示遮罩层</van-cell
       >
@@ -111,7 +111,7 @@
       </van-popup>
       <br />
       <!-- 动画时长 -->
-      <div style="color: #666666;">动画时长</div>
+      <div style="color: #666666">动画时长</div>
       <van-cell class="item-cell" is-link @click="show9 = true"
         >动画时长</van-cell
       >

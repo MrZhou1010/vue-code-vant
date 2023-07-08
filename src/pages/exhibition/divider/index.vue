@@ -1,7 +1,7 @@
 <template>
   <div class="divider">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,22 +12,22 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-divider />
       <!-- 展示文字 -->
-      <div style="color: #666666;">展示文字</div>
+      <div style="color: #666666">展示文字</div>
       <van-divider>文字</van-divider>
       <van-divider :hairline="false">文字</van-divider>
       <!-- 内容位置 -->
-      <div style="color: #666666;">内容位置</div>
+      <div style="color: #666666">内容位置</div>
       <van-divider content-position="left">文字</van-divider>
       <van-divider content-position="right">文字</van-divider>
       <!-- 虚线 -->
-      <div style="color: #666666;">虚线</div>
+      <div style="color: #666666">虚线</div>
       <van-divider dashed>文字</van-divider>
       <van-divider dashed :hairline="false">文字</van-divider>
       <!-- 自定义样式 -->
-      <div style="color: #666666;">自定义样式</div>
+      <div style="color: #666666">自定义样式</div>
       <van-divider class="divider-style">文字</van-divider>
     </div>
   </div>

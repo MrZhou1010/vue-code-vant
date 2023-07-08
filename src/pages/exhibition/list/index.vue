@@ -1,7 +1,7 @@
 <template>
   <div class="list">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -140,7 +140,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@import "~styles/common.less";
+// @import "~styles/common.less";
 
 .content {
   position: fixed;

@@ -1,7 +1,7 @@
 <template>
   <div class="action-sheet">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-cell class="item-cell" is-link @click="showActionSheet1 = true"
         >基础用法</van-cell
       >
@@ -80,7 +80,7 @@
       />
       <br />
       <!-- 选项状态 -->
-      <div style="color: #666666;">选项状态</div>
+      <div style="color: #666666">选项状态</div>
       <van-cell class="item-cell" is-link @click="showActionSheet8 = true"
         >选项状态</van-cell
       >
@@ -92,7 +92,7 @@
       />
       <br />
       <!-- 自定义面板 -->
-      <div style="color: #666666;">自定义面板</div>
+      <div style="color: #666666">自定义面板</div>
       <van-cell class="item-cell" is-link @click="showActionSheet9 = true"
         >自定义面板</van-cell
       >
@@ -235,13 +235,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .item-cell {
   margin-top: 1rem;

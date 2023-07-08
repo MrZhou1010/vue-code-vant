@@ -1,7 +1,7 @@
 <template>
   <div class="swipe-cell">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;margin-bottom: 10px;">基础用法</div>
+      <div style="color: #666666; margin-bottom: 10px">基础用法</div>
       <van-swipe-cell>
         <template #left>
           <van-button type="primary" text="选择" square />
@@ -25,7 +25,7 @@
       </van-swipe-cell>
       <br />
       <!-- 自定义内容 -->
-      <div style="color: #666666;margin-bottom: 10px;">自定义内容</div>
+      <div style="color: #666666; margin-bottom: 10px">自定义内容</div>
       <van-swipe-cell>
         <van-card
           class="goods-card"
@@ -41,7 +41,7 @@
       </van-swipe-cell>
       <br />
       <!-- 是否禁用滑动 -->
-      <div style="color: #666666;margin-bottom: 10px;">是否禁用滑动</div>
+      <div style="color: #666666; margin-bottom: 10px">是否禁用滑动</div>
       <van-swipe-cell :disabled="true">
         <template #left>
           <van-button type="primary" text="选择" square />
@@ -53,7 +53,7 @@
       </van-swipe-cell>
       <br />
       <!-- 异步关闭 -->
-      <div style="color: #666666;margin-bottom: 10px;">异步关闭</div>
+      <div style="color: #666666; margin-bottom: 10px">异步关闭</div>
       <van-swipe-cell :before-close="beforeClose" :stop-propagation="true">
         <template #left>
           <van-button type="primary" text="选择" square />
@@ -111,13 +111,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .item-cell {
   margin-top: 1rem;

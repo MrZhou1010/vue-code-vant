@@ -1,7 +1,7 @@
 <template>
   <div class="sticky">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,24 +12,22 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;margin: 10px 0;">基础用法</div>
+      <div style="color: #666666; margin: 10px 0">基础用法</div>
       <van-sticky>
-        <van-button style="margin-left: 10px;" type="primary"
+        <van-button style="margin-left: 10px" type="primary"
           >基础用法</van-button
         >
       </van-sticky>
       <!-- 吸顶距离 -->
-      <div style="color: #666666;margin: 10px 0;">吸顶距离</div>
+      <div style="color: #666666; margin: 10px 0">吸顶距离</div>
       <van-sticky offset-top="2.75rem">
-        <van-button style="margin-left: 120px;" type="info"
-          >吸顶距离</van-button
-        >
+        <van-button style="margin-left: 120px" type="info">吸顶距离</van-button>
       </van-sticky>
       <!-- 指定容器 -->
-      <div style="color: #666666;margin: 10px 0;">指定容器</div>
-      <div ref="container" style="height: 150px;background-color: white;">
+      <div style="color: #666666; margin: 10px 0">指定容器</div>
+      <div ref="container" style="height: 150px; background-color: white">
         <van-sticky :container="container">
-          <van-button style="margin-left: 220px;" type="warning"
+          <van-button style="margin-left: 220px" type="warning"
             >指定容器</van-button
           >
         </van-sticky>

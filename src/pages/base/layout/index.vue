@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 24列栅格 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-row>
         <van-col
           v-for="index in num"
@@ -37,7 +37,7 @@
       </van-row>
       <br />
       <!-- 设置列元素间距 -->
-      <div style="color: #666666;">设置列元素间距</div>
+      <div style="color: #666666">设置列元素间距</div>
       <van-row gutter="30">
         <van-col class="col-red" span="8">span: 8</van-col>
         <van-col class="col-orange" span="8">span: 8</van-col>
@@ -45,7 +45,7 @@
       </van-row>
       <br />
       <!-- Flex 布局 -->
-      <div style="color: #666666;">Flex 布局</div>
+      <div style="color: #666666">Flex 布局</div>
       <!-- 左对齐 -->
       <van-row type="flex">
         <van-col class="col-red" span="6">span: 6</van-col>
@@ -82,7 +82,7 @@
       </van-row>
       <!-- Flex 交叉轴对齐方式 -->
       <!-- 当align="top"时手动设置align-items:flex-start才行 -->
-      <div style="color: #666666;">Flex 交叉轴对齐方式</div>
+      <div style="color: #666666">Flex 交叉轴对齐方式</div>
       <van-row class="row-blue" type="flex" align="top" @click="onClick('row')">
         <van-col class="col-red" span="6" @click.stop="onClick('col')"
           >span: 6</van-col

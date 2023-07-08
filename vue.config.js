@@ -3,7 +3,7 @@ const path = require("path");
 const argv = process.argv.splice(2);
 // webpack插件--生成代码分析报告 有analyzer命令则生成报告没有为空
 const BundleAnalyzerPlugin = argv.includes("--analyzer")
-  ? [new (require("webpack-bundle-analyzer")).BundleAnalyzerPlugin()]
+  ? [new (require("webpack-bundle-analyzer").BundleAnalyzerPlugin)()]
   : [];
 const plugins = [...BundleAnalyzerPlugin];
 console.log("当前开发环境:", process.env.NODE_ENV);

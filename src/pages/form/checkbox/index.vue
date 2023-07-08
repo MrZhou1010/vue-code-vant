@@ -1,7 +1,7 @@
 <template>
   <div class="checkbox">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,12 +12,12 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-checkbox class="item-checkbox" v-model="checked1"
         >复选框</van-checkbox
       >
       <!-- 禁用状态 -->
-      <div style="color: #666666;">禁用状态</div>
+      <div style="color: #666666">禁用状态</div>
       <van-checkbox class="item-checkbox" v-model="checked1" disabled
         >复选框</van-checkbox
       >
@@ -25,12 +25,12 @@
         >复选框</van-checkbox
       >
       <!-- 自定义形状 -->
-      <div style="color: #666666;">自定义形状</div>
+      <div style="color: #666666">自定义形状</div>
       <van-checkbox class="item-checkbox" v-model="checked3" shape="square"
         >自定义形状</van-checkbox
       >
       <!-- 自定义颜色 -->
-      <div style="color: #666666;">自定义颜色</div>
+      <div style="color: #666666">自定义颜色</div>
       <van-checkbox
         class="item-checkbox"
         v-model="checked4"
@@ -38,12 +38,12 @@
         >自定义颜色</van-checkbox
       >
       <!-- 自定义大小 -->
-      <div style="color: #666666;">自定义大小</div>
+      <div style="color: #666666">自定义大小</div>
       <van-checkbox class="item-checkbox" v-model="checked5" icon-size="24px"
         >自定义大小</van-checkbox
       >
       <!-- 自定义图标 -->
-      <div style="color: #666666;">自定义图标</div>
+      <div style="color: #666666">自定义图标</div>
       <van-checkbox class="item-checkbox" v-model="checked6">
         自定义图标
         <template #icon="props">
@@ -54,7 +54,7 @@
         </template>
       </van-checkbox>
       <!-- 文本位置 -->
-      <div style="color: #666666;">文本位置</div>
+      <div style="color: #666666">文本位置</div>
       <van-checkbox
         class="item-checkbox"
         v-model="checked7"
@@ -62,31 +62,31 @@
         >文本位置</van-checkbox
       >
       <!-- 禁用文本点击 -->
-      <div style="color: #666666;">禁用文本点击</div>
+      <div style="color: #666666">禁用文本点击</div>
       <van-checkbox class="item-checkbox" v-model="checked7" label-disabled
         >禁用文本点击</van-checkbox
       >
       <!-- 复选框组 -->
-      <div style="color: #666666;">复选框组</div>
+      <div style="color: #666666">复选框组</div>
       <van-checkbox-group v-model="result1">
         <van-checkbox class="item-checkbox" name="a1">复选框 a</van-checkbox>
         <van-checkbox class="item-checkbox" name="b1">复选框 b</van-checkbox>
       </van-checkbox-group>
       <!-- 水平排列 -->
-      <div style="color: #666666;">水平排列</div>
+      <div style="color: #666666">水平排列</div>
       <van-checkbox-group v-model="result2" direction="horizontal">
         <van-checkbox class="item-checkbox" name="a2">复选框 a</van-checkbox>
         <van-checkbox class="item-checkbox" name="b2">复选框 b</van-checkbox>
       </van-checkbox-group>
       <!-- 限制最大可选数 -->
-      <div style="color: #666666;">限制最大可选数</div>
+      <div style="color: #666666">限制最大可选数</div>
       <van-checkbox-group v-model="result3" :max="2">
         <van-checkbox class="item-checkbox" name="a3">复选框 a</van-checkbox>
         <van-checkbox class="item-checkbox" name="b3">复选框 b</van-checkbox>
         <van-checkbox class="item-checkbox" name="c3">复选框 c</van-checkbox>
       </van-checkbox-group>
       <!-- 全选与反选 -->
-      <div style="color: #666666;">全选与反选</div>
+      <div style="color: #666666">全选与反选</div>
       <van-checkbox-group v-model="result4" ref="checkboxGroup">
         <van-checkbox class="item-checkbox" name="a4">复选框 a</van-checkbox>
         <van-checkbox class="item-checkbox" name="b4">复选框 b</van-checkbox>
@@ -102,7 +102,7 @@
         >全不选</van-button
       >
       <!-- 搭配单元格组件使用 -->
-      <div style="color: #666666;">搭配单元格组件使用</div>
+      <div style="color: #666666">搭配单元格组件使用</div>
       <van-checkbox-group v-model="result5">
         <!-- <van-cell-group> -->
         <van-cell
@@ -170,13 +170,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .item-checkbox {
   margin-top: 1rem;

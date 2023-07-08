@@ -1,7 +1,7 @@
 <template>
   <div class="image-preview">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,13 +12,13 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-cell class="item-cell" is-link @click="showImagePreview1()"
         >预览图片</van-cell
       >
       <br />
       <!-- 传入配置项 -->
-      <div style="color: #666666;">传入配置项</div>
+      <div style="color: #666666">传入配置项</div>
       <van-cell class="item-cell" is-link @click="showImagePreview2()"
         >指定初始位置</van-cell
       >
@@ -42,13 +42,13 @@
       >
       <br />
       <!-- 异步关闭 -->
-      <div style="color: #666666;">异步关闭</div>
+      <div style="color: #666666">异步关闭</div>
       <van-cell class="item-cell" is-link @click="showImagePreview9()"
         >异步关闭</van-cell
       >
       <br />
       <!-- 组件调用 -->
-      <div style="color: #666666;">组件调用</div>
+      <div style="color: #666666">组件调用</div>
       <van-cell class="item-cell" is-link @click="showImagePreview = true"
         >组件调用</van-cell
       >
@@ -57,9 +57,7 @@
         :images="images"
         @change="onChange"
       >
-        <template #index
-          >第{{ index }}页</template
-        >
+        <template #index>第{{ index }}页</template>
       </van-image-preview>
     </div>
   </div>

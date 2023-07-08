@@ -4,7 +4,7 @@ Vue.use(VueRouter);
 
 // 需要左方向动画的路由用this.$router.togo("****")
 // 路由地址加入history
-VueRouter.prototype.togo = function(path, data) {
+VueRouter.prototype.togo = function (path, data) {
   this.isLeft = true;
   this.isRight = false;
   this.push({
@@ -15,7 +15,7 @@ VueRouter.prototype.togo = function(path, data) {
 
 // 需要左方向动画的路由用this.$router.replace("****")
 // 路由地址不加入history
-VueRouter.prototype.toReplace = function(path, data) {
+VueRouter.prototype.toReplace = function (path, data) {
   this.isLeft = true;
   this.isRight = false;
   this.replace({
@@ -25,7 +25,7 @@ VueRouter.prototype.toReplace = function(path, data) {
 };
 
 // 需要返回按钮动画的路由用this.$router.goBack()返回上一个路由
-VueRouter.prototype.goBack = function() {
+VueRouter.prototype.goBack = function () {
   this.isLeft = false;
   this.isRight = true;
   this.go(-1);
@@ -331,6 +331,36 @@ const routes = [
     path: "/grid",
     name: "grid",
     component: (resolve) => require(["../pages/nav/grid/index"], resolve),
+  },
+  {
+    path: "/index-bar",
+    name: "index-bar",
+    component: (resolve) => require(["../pages/nav/indexBar/index"], resolve),
+  },
+  {
+    path: "/nav-bar",
+    name: "nav-bar",
+    component: (resolve) => require(["../pages/nav/navBar/index"], resolve),
+  },
+  {
+    path: "/sidebar",
+    name: "sidebar",
+    component: (resolve) => require(["../pages/nav/sideBar/index"], resolve),
+  },
+  {
+    path: "/tab",
+    name: "tab",
+    component: (resolve) => require(["../pages/nav/tab/index"], resolve),
+  },
+  {
+    path: "/tabbar",
+    name: "tabbar",
+    component: (resolve) => require(["../pages/nav/tabBar/index"], resolve),
+  },
+  {
+    path: "/tree-select",
+    name: "tree-select",
+    component: (resolve) => require(["../pages/nav/treeSelect/index"], resolve),
   },
   {
     path: "/pagination",

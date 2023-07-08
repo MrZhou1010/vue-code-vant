@@ -1,7 +1,7 @@
 <template>
   <div class="calendar">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,8 +12,8 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
-      <div class="content-box">
+      <div style="color: #666666">基础用法</div>
+      <div class="cell-box">
         <van-cell
           title="选择单个日期"
           :value="singleDate1"
@@ -53,8 +53,8 @@
       </div>
       <br />
       <!-- 快捷选择 -->
-      <div style="color: #666666;">快捷选择</div>
-      <div class="content-box">
+      <div style="color: #666666">快捷选择</div>
+      <div class="cell-box">
         <van-cell
           title="选择单个日期"
           :value="singleDate2"
@@ -84,8 +84,8 @@
       </div>
       <br />
       <!-- 自定义日历 -->
-      <div style="color: #666666;">自定义日历</div>
-      <div class="content-box">
+      <div style="color: #666666">自定义日历</div>
+      <div class="cell-box">
         <van-cell
           title="自定义颜色"
           :value="date3"
@@ -176,8 +176,8 @@
       </div>
       <br />
       <!-- 其它 -->
-      <div style="color: #666666;">其它</div>
-      <div class="content-box">
+      <div style="color: #666666">其它</div>
+      <div class="cell-box">
         <van-cell
           title="是否显示月份背景水印"
           :value="date10"
@@ -230,8 +230,8 @@
       </div>
       <br />
       <!-- 方法 -->
-      <div style="color: #666666;">方法</div>
-      <div class="content-box">
+      <div style="color: #666666">方法</div>
+      <div class="cell-box">
         <van-cell title="reset" is-link @click="reset()"></van-cell>
         <van-cell
           title="scrollToDate"
@@ -333,11 +333,11 @@ export default {
     },
     reset() {
       let calendar = this.$refs.calendar;
-      calendar.reset(new Date(2022, 6, 10));
+      calendar.reset(new Date(2023, 12, 10));
     },
     scrollToDate() {
       let calendar = this.$refs.calendar;
-      calendar.scrollToDate(new Date(2022, 6, 10));
+      calendar.scrollToDate(new Date(2023, 8, 10));
     },
     onSelect(date) {
       console.log("date:", date);
@@ -432,14 +432,7 @@ export default {
 <style lang="less" scoped>
 @import "~styles/common.less";
 
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
-
-.content-box {
+.cell-box {
   margin-top: 0.625rem;
   padding: 0.625rem;
   background-color: white;

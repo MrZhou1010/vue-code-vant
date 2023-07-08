@@ -1,7 +1,7 @@
 <template>
   <div class="empty">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,10 +12,10 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-empty description="描述文字" />
       <!-- 图片类型 -->
-      <div style="color: #666666;">图片类型</div>
+      <div style="color: #666666">图片类型</div>
       <van-tabs>
         <van-tab v-for="(tab, index) in tabs" :key="index" :title="tab">
           <div class="tab-content" v-if="index === 0">
@@ -30,14 +30,14 @@
         </van-tab>
       </van-tabs>
       <!-- 自定义图片 -->
-      <div style="color: #666666;">自定义图片</div>
+      <div style="color: #666666">自定义图片</div>
       <van-empty
         class="custom-image"
         image="https://img01.yzcdn.cn/vant/custom-empty-image.png"
         description="自定义图片"
       />
       <!-- 底部内容 -->
-      <div style="color: #666666;">底部内容</div>
+      <div style="color: #666666">底部内容</div>
       <van-empty description="描述文字">
         <van-button class="custom-button" type="danger" round>按钮</van-button>
       </van-empty>

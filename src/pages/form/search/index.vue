@@ -1,7 +1,7 @@
 <template>
   <div class="search">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,14 +12,14 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-search
         class="item-search"
         v-model="value1"
         placeholder="请输入搜索关键词"
       />
       <!-- 事件监听 -->
-      <div style="color: #666666;">事件监听</div>
+      <div style="color: #666666">事件监听</div>
       <form action="/">
         <van-search
           class="item-search"
@@ -31,7 +31,7 @@
         />
       </form>
       <!-- 搜索框内容对齐 -->
-      <div style="color: #666666;">搜索框内容对齐</div>
+      <div style="color: #666666">搜索框内容对齐</div>
       <van-search
         class="item-search"
         v-model="value3"
@@ -39,7 +39,7 @@
         input-align="center"
       />
       <!-- 禁用搜索框 -->
-      <div style="color: #666666;">禁用搜索框</div>
+      <div style="color: #666666">禁用搜索框</div>
       <van-search
         class="item-search"
         v-model="value4"
@@ -47,7 +47,7 @@
         disabled
       />
       <!-- 是否将输入框设为只读 -->
-      <div style="color: #666666;">是否将输入框设为只读</div>
+      <div style="color: #666666">是否将输入框设为只读</div>
       <van-search
         class="item-search"
         v-model="value5"
@@ -55,7 +55,7 @@
         readonly
       />
       <!-- 自定义背景色 -->
-      <div style="color: #666666;">自定义背景色</div>
+      <div style="color: #666666">自定义背景色</div>
       <van-search
         class="item-search"
         v-model="value6"
@@ -64,7 +64,7 @@
         background="#4fc08d"
       />
       <!-- 自定义按钮 -->
-      <div style="color: #666666;">自定义按钮</div>
+      <div style="color: #666666">自定义按钮</div>
       <van-search
         class="item-search"
         v-model="value7"
@@ -78,7 +78,7 @@
         </template>
       </van-search>
       <!-- 输入的最大字符数 -->
-      <div style="color: #666666;">输入的最大字符数</div>
+      <div style="color: #666666">输入的最大字符数</div>
       <van-search
         class="item-search"
         v-model="value8"
@@ -86,7 +86,7 @@
         :maxlength="10"
       />
       <!-- 是否启用清除图标 -->
-      <div style="color: #666666;">是否启用清除图标</div>
+      <div style="color: #666666">是否启用清除图标</div>
       <van-search
         class="item-search"
         v-model="value9"
@@ -94,7 +94,7 @@
         :clearable="false"
       />
       <!-- 是否将输入内容标红 -->
-      <div style="color: #666666;">是否将输入内容标红</div>
+      <div style="color: #666666">是否将输入内容标红</div>
       <van-search
         class="item-search"
         v-model="value10"
@@ -142,13 +142,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .item-search {
   margin-top: 1rem;

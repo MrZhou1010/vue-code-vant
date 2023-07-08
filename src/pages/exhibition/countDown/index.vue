@@ -1,7 +1,7 @@
 <template>
   <div class="count-down">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,26 +12,26 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
-      <van-count-down style="margin: 10px;" :time="time" />
+      <div style="color: #666666">基础用法</div>
+      <van-count-down style="margin: 10px" :time="time" />
       <!-- 自定义格式 -->
-      <div style="color: #666666;">自定义格式</div>
+      <div style="color: #666666">自定义格式</div>
       <van-count-down
-        style="margin: 10px;"
+        style="margin: 10px"
         :time="time"
         format="DD天HH时mm分ss秒"
       />
       <!-- 毫秒级渲染 -->
-      <div style="color: #666666;">毫秒级渲染</div>
+      <div style="color: #666666">毫秒级渲染</div>
       <van-count-down
-        style="margin: 10px;"
+        style="margin: 10px"
         :time="time"
         format="HH:mm:ss:SS"
         millisecond
       />
       <!-- 自定义样式 -->
-      <div style="color: #666666;">自定义样式</div>
-      <van-count-down style="margin: 10px;" :time="time">
+      <div style="color: #666666">自定义样式</div>
+      <van-count-down style="margin: 10px" :time="time">
         <template #default="timeData">
           <span class="block">{{ timeData.hours }}</span>
           <span class="colon">:</span>
@@ -41,9 +41,9 @@
         </template>
       </van-count-down>
       <!-- 手动控制 -->
-      <div style="color: #666666;">手动控制</div>
+      <div style="color: #666666">手动控制</div>
       <van-count-down
-        style="margin: 10px;"
+        style="margin: 10px"
         ref="countDown"
         :time="30000"
         :auto-start="false"

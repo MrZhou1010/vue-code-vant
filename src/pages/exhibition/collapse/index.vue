@@ -1,7 +1,7 @@
 <template>
   <div class="collapse">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,23 +12,23 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
-      <van-collapse style="margin: 10px 0;" v-model="activeNames1">
+      <div style="color: #666666">基础用法</div>
+      <van-collapse style="margin: 10px 0" v-model="activeNames1">
         <van-collapse-item title="标题1" name="1">内容1</van-collapse-item>
         <van-collapse-item title="标题2" name="2">内容2</van-collapse-item>
         <van-collapse-item title="标题3" name="3">内容3</van-collapse-item>
       </van-collapse>
       <!-- 手风琴 -->
-      <div style="color: #666666;">手风琴</div>
-      <van-collapse style="margin: 10px 0;" v-model="activeNames2" accordion>
+      <div style="color: #666666">手风琴</div>
+      <van-collapse style="margin: 10px 0" v-model="activeNames2" accordion>
         <van-collapse-item title="标题1" name="1">内容1</van-collapse-item>
         <van-collapse-item title="标题2" name="2">内容2</van-collapse-item>
         <van-collapse-item title="标题3" name="3">内容3</van-collapse-item>
       </van-collapse>
       <!-- 禁用状态 -->
-      <div style="color: #666666;">禁用状态</div>
+      <div style="color: #666666">禁用状态</div>
       <van-collapse
-        style="margin: 10px 0;"
+        style="margin: 10px 0"
         v-model="activeNames3"
         :border="false"
       >
@@ -41,8 +41,8 @@
         >
       </van-collapse>
       <!-- 自定义标题内容 -->
-      <div style="color: #666666;">自定义标题内容</div>
-      <van-collapse style="margin: 10px 0;" v-model="activeNames4">
+      <div style="color: #666666">自定义标题内容</div>
+      <van-collapse style="margin: 10px 0" v-model="activeNames4">
         <van-collapse-item name="1">
           <template #title>
             <div>

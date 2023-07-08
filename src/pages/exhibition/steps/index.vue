@@ -1,7 +1,7 @@
 <template>
   <div class="steps">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;margin: 10px 0;">基础用法</div>
+      <div style="color: #666666; margin: 10px 0">基础用法</div>
       <van-steps :active="active">
         <van-step>买家下单</van-step>
         <van-step>商家接单</van-step>
@@ -20,7 +20,7 @@
         <van-step>交易完成</van-step>
       </van-steps>
       <!-- 自定义样式 -->
-      <div style="color: #666666;margin: 10px 0;">自定义样式</div>
+      <div style="color: #666666; margin: 10px 0">自定义样式</div>
       <van-steps
         :active="active"
         active-icon="circle"
@@ -35,7 +35,7 @@
         <van-step>交易完成</van-step>
       </van-steps>
       <!-- 竖向步骤条 -->
-      <div style="color: #666666;margin: 10px 0;">竖向步骤条</div>
+      <div style="color: #666666; margin: 10px 0">竖向步骤条</div>
       <van-steps :active="active" direction="vertical" :center="false">
         <van-step>
           <h5>快件已签收</h5>
@@ -93,9 +93,6 @@ export default {
 @import "~styles/common.less";
 
 .content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #ffffff;
-  text-align: left;
+  background-color: white;
 }
 </style>

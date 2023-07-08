@@ -1,7 +1,7 @@
 <template>
   <div class="picker">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;margin: 0.5rem 0;">基础用法</div>
+      <div style="color: #666666; margin: 0.5rem 0">基础用法</div>
       <van-cell
         is-link
         title="基础用法"
@@ -149,7 +149,7 @@
         />
       </van-popup>
       <!-- 其他用法 -->
-      <div style="color: #666666;margin: 0.5rem 0;">其他用法</div>
+      <div style="color: #666666; margin: 0.5rem 0">其他用法</div>
       <van-cell
         is-link
         title="多列选择"
@@ -479,7 +479,7 @@ export default {
     },
     onConfirm9(value, index) {
       this.showPopup9 = false;
-      this.selectedValue9 = values;
+      this.selectedValue9 = value;
     },
     onConfirm10(values, index) {
       this.showPopup10 = false;
@@ -506,11 +506,4 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 </style>

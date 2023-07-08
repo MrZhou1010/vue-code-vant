@@ -1,7 +1,7 @@
 <template>
   <div class="dialog">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-cell class="item-cell" is-link @click="showDialog1()"
         >提示弹窗</van-cell
       >
@@ -24,7 +24,7 @@
       >
       <br />
       <!-- 圆角按钮样式 -->
-      <div style="color: #666666;">圆角按钮样式</div>
+      <div style="color: #666666">圆角按钮样式</div>
       <van-cell class="item-cell" is-link @click="showDialog4()"
         >提示弹窗</van-cell
       >
@@ -36,13 +36,13 @@
       >
       <br />
       <!-- 异步关闭 -->
-      <div style="color: #666666;">异步关闭</div>
+      <div style="color: #666666">异步关闭</div>
       <van-cell class="item-cell" is-link @click="showDialog7()"
         >异步关闭</van-cell
       >
       <br />
       <!-- 组件调用 -->
-      <div style="color: #666666;">组件调用</div>
+      <div style="color: #666666">组件调用</div>
       <van-cell class="item-cell" is-link @click="showDialog = true"
         >组件调用</van-cell
       >
@@ -169,13 +169,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .item-cell {
   margin-top: 1rem;

@@ -1,7 +1,7 @@
 <template>
   <div class="form">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;margin: 0.5rem 0;">基础用法</div>
+      <div style="color: #666666; margin: 0.5rem 0">基础用法</div>
       <van-form @submit="onSubmit">
         <van-field
           v-model="username"
@@ -29,14 +29,14 @@
           placeholder="密码"
           :rules="[{ required: true, message: '请填写密码' }]"
         />
-        <div style="margin: 16px;">
+        <div style="margin: 16px">
           <van-button round block type="info" native-type="submit"
             >提交</van-button
           >
         </div>
       </van-form>
       <!-- 校验规则 -->
-      <div style="color: #666666;margin: 0.5rem 0;">校验规则</div>
+      <div style="color: #666666; margin: 0.5rem 0">校验规则</div>
       <van-form validate-first @failed="onFailed">
         <!-- 通过pattern进行正则校验 -->
         <van-field
@@ -59,14 +59,14 @@
           placeholder="异步函数校验"
           :rules="[{ validator: asyncValidator, message: '请输入正确内容' }]"
         />
-        <div style="margin: 16px;">
+        <div style="margin: 16px">
           <van-button round block type="info" native-type="submit"
             >提交</van-button
           >
         </div>
       </van-form>
       <!-- 表单项类型 -->
-      <div style="color: #666666;margin: 0.5rem 0;">表单项类型</div>
+      <div style="color: #666666; margin: 0.5rem 0">表单项类型</div>
       <van-form @submit="onSubmit">
         <van-field name="switch" label="开关">
           <template #input>
@@ -288,11 +288,13 @@ export default {
       } else if (format == "MM-dd") {
         return `${date.getMonth() + 1}/${date.getDate()}`;
       } else if (format == "yyyy-MM-dd HH:mm") {
-        return `${date.getFullYear()}/${date.getMonth() +
-          1}/${date.getDate()} ${date.getHours()}/${date.getMinutes()}`;
+        return `${date.getFullYear()}/${
+          date.getMonth() + 1
+        }/${date.getDate()} ${date.getHours()}/${date.getMinutes()}`;
       } else if (format == "yyyy-MM-dd HH") {
-        return `${date.getFullYear()}/${date.getMonth() +
-          1}/${date.getDate()} ${date.getHours()}`;
+        return `${date.getFullYear()}/${
+          date.getMonth() + 1
+        }/${date.getDate()} ${date.getHours()}`;
       }
     },
   },
@@ -301,13 +303,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .item-wrapper {
   border-radius: 1rem;

@@ -1,7 +1,7 @@
 <template>
   <div class="uploader">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,20 +12,20 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-uploader class="item-uploader" :after-read="afterRead1" />
       <!-- 文件预览 -->
-      <div style="color: #666666;">文件预览</div>
+      <div style="color: #666666">文件预览</div>
       <van-uploader class="item-uploader" v-model="fileList1" multiple />
       <!-- 上传状态 -->
-      <div style="color: #666666;">上传状态</div>
+      <div style="color: #666666">上传状态</div>
       <van-uploader
         class="item-uploader"
         v-model="fileList2"
         :after-read="afterRead2"
       />
       <!-- 限制上传数量 -->
-      <div style="color: #666666;">限制上传数量</div>
+      <div style="color: #666666">限制上传数量</div>
       <van-uploader
         class="item-uploader"
         v-model="fileList3"
@@ -33,7 +33,7 @@
         :max-count="2"
       />
       <!-- 限制上传大小 -->
-      <div style="color: #666666;">限制上传大小</div>
+      <div style="color: #666666">限制上传大小</div>
       <van-uploader
         class="item-uploader"
         v-model="fileList4"
@@ -41,7 +41,7 @@
         :max-size="500 * 1024"
         @oversize="onOversize"
       />
-      <div style="color: #666666;">限制上传大小</div>
+      <div style="color: #666666">限制上传大小</div>
       <van-uploader
         class="item-uploader"
         v-model="fileList5"
@@ -49,25 +49,25 @@
         :max-size="isOverSize"
       />
       <!-- 自定义上传样式 -->
-      <div style="color: #666666;">自定义上传样式</div>
+      <div style="color: #666666">自定义上传样式</div>
       <van-uploader class="item-uploader">
         <van-button type="primary" icon="plus">上传文件</van-button>
       </van-uploader>
       <!-- 自定义预览样式 -->
-      <div style="color: #666666;">自定义预览样式</div>
+      <div style="color: #666666">自定义预览样式</div>
       <van-uploader class="item-uploader" v-model="fileList6">
         <template #preview-cover="{ file }">
           <div class="preview-cover van-ellipsis">{{ file.name }}</div>
         </template>
       </van-uploader>
       <!-- 上传前置处理 -->
-      <div style="color: #666666;">上传前置处理</div>
+      <div style="color: #666666">上传前置处理</div>
       <van-uploader class="item-uploader" :before-read="beforeRead" />
       <!-- 禁用文件上传 -->
-      <div style="color: #666666;">禁用文件上传</div>
+      <div style="color: #666666">禁用文件上传</div>
       <van-uploader class="item-uploader" disabled />
       <!-- 自定义单个图片预览 -->
-      <div style="color: #666666;">自定义单个图片预览</div>
+      <div style="color: #666666">自定义单个图片预览</div>
       <van-uploader
         class="item-uploader"
         v-model="fileList7"
@@ -214,7 +214,7 @@ export default {
   box-sizing: border-box;
   width: 100%;
   padding: 4px;
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   text-align: center;
   background: rgba(0, 0, 0, 0.3);

@@ -1,18 +1,19 @@
 <template>
   <div class="grid">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
       safe-area-inset-top
       :title="title"
+      :z-index="99"
       @click-left="goBack()"
     >
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;margin: 10px 0;">基础用法</div>
+      <div style="color: #666666; margin: 10px 0">基础用法</div>
       <van-grid>
         <van-grid-item
           v-for="value in 4"
@@ -22,7 +23,7 @@
         />
       </van-grid>
       <!-- 自定义列数 -->
-      <div style="color: #666666;margin: 10px 0;">自定义列数</div>
+      <div style="color: #666666; margin: 10px 0">自定义列数</div>
       <van-grid :column-num="3">
         <van-grid-item
           v-for="value in 6"
@@ -32,7 +33,7 @@
         />
       </van-grid>
       <!-- 自定义内容 -->
-      <div style="color: #666666;margin: 10px 0;">自定义内容</div>
+      <div style="color: #666666; margin: 10px 0">自定义内容</div>
       <van-grid :column-num="3" :border="false">
         <van-grid-item>
           <van-image src="https://img01.yzcdn.cn/vant/apple-1.jpg" />
@@ -45,7 +46,7 @@
         </van-grid-item>
       </van-grid>
       <!-- 正方形格子 -->
-      <div style="color: #666666;margin: 10px 0;">正方形格子</div>
+      <div style="color: #666666; margin: 10px 0">正方形格子</div>
       <van-grid :column-num="3" square>
         <van-grid-item
           v-for="value in 6"
@@ -55,7 +56,7 @@
         />
       </van-grid>
       <!-- 格子间距 -->
-      <div style="color: #666666;margin: 10px 0;">格子间距</div>
+      <div style="color: #666666; margin: 10px 0">格子间距</div>
       <van-grid :column-num="3" :gutter="10">
         <van-grid-item
           v-for="value in 6"
@@ -65,7 +66,7 @@
         />
       </van-grid>
       <!-- 内容横排 -->
-      <div style="color: #666666;margin: 10px 0;">内容横排</div>
+      <div style="color: #666666; margin: 10px 0">内容横排</div>
       <van-grid :column-num="3" direction="horizontal">
         <van-grid-item
           v-for="value in 6"
@@ -75,7 +76,7 @@
         />
       </van-grid>
       <!-- 页面导航 -->
-      <div style="color: #666666;margin: 10px 0;">页面导航</div>
+      <div style="color: #666666; margin: 10px 0">页面导航</div>
       <van-grid :column-num="2" clickable>
         <van-grid-item icon="home-o" text="路由跳转" to="/home" />
         <van-grid-item
@@ -83,6 +84,12 @@
           text="URL 跳转"
           url="../../../../index.html"
         />
+      </van-grid>
+      <!-- 徽标提示 -->
+      <div style="color: #666666; margin: 10px 0">徽标提示</div>
+      <van-grid :column-num="2">
+        <van-grid-item icon="home-o" text="文字" dot />
+        <van-grid-item icon="search" text="文字" badge="99+" />
       </van-grid>
     </div>
   </div>
@@ -110,11 +117,4 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 </style>

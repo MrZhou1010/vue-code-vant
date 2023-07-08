@@ -1,7 +1,7 @@
 <template>
   <div class="image">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-image
         class="item-image"
         width="100"
@@ -21,7 +21,7 @@
       />
       <br /><br />
       <!-- 填充模式 -->
-      <div style="color: #666666;">填充模式</div>
+      <div style="color: #666666">填充模式</div>
       <van-image
         class="item-image"
         width="6rem"
@@ -59,7 +59,7 @@
       />
       <br /><br />
       <!-- 圆形图片 -->
-      <div style="color: #666666;">圆形图片</div>
+      <div style="color: #666666">圆形图片</div>
       <van-image
         class="item-image"
         width="6rem"
@@ -111,7 +111,7 @@
         src="https://img01.yzcdn.cn/vant/cat.jpeg"
       />
       <!-- 图片懒加载 -->
-      <div style="color: #666666;">图片懒加载</div>
+      <div style="color: #666666">图片懒加载</div>
       <van-image
         class="item-image"
         width="100"
@@ -122,7 +122,7 @@
       />
       <br /><br />
       <!-- 加载中提示 -->
-      <div style="color: #666666;">加载中提示</div>
+      <div style="color: #666666">加载中提示</div>
       <van-image
         class="item-image"
         width="100"
@@ -131,9 +131,7 @@
         loading-icon="photo"
         src="https://github.com/youzan/vant/tree/dev/packages/vant-icons/src/assets/1.jpeg"
       >
-        <template #default
-          >默认提示</template
-        >
+        <template #default>默认提示</template>
       </van-image>
       <van-image
         class="item-image"
@@ -146,13 +144,11 @@
         <template #loading>
           <van-loading type="spinner" size="20" />
         </template>
-        <template #default
-          >自定义提示</template
-        >
+        <template #default>自定义提示</template>
       </van-image>
       <br /><br />
       <!-- 加载失败提示 -->
-      <div style="color: #666666;">加载失败提示</div>
+      <div style="color: #666666">加载失败提示</div>
       <van-image
         class="item-image"
         width="100"
@@ -161,9 +157,7 @@
         error-icon="photo-fail"
         src="https://img01.yzcdn.cn/vant/cat_1.jpeg"
       >
-        <template #default
-          >默认提示</template
-        >
+        <template #default>默认提示</template>
       </van-image>
       <van-image
         class="item-image"
@@ -171,12 +165,8 @@
         height="100"
         src="https://img01.yzcdn.cn/vant/cat_1.jpeg"
       >
-        <template #error
-          >加载失败</template
-        >
-        <template #default
-          >自定义提示</template
-        >
+        <template #error>加载失败</template>
+        <template #default>自定义提示</template>
       </van-image>
     </div>
   </div>

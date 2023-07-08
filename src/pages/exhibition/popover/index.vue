@@ -1,7 +1,7 @@
 <template>
   <div class="popover">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;margin: 10px 0;">基础用法</div>
+      <div style="color: #666666; margin: 10px 0">基础用法</div>
       <van-popover
         v-model="showPopover1"
         trigger="click"
@@ -21,7 +21,7 @@
         @select="onSelect"
       >
         <template #reference>
-          <van-button style="margin-left: 10px;" type="primary"
+          <van-button style="margin-left: 10px" type="primary"
             >浅色风格</van-button
           >
         </template>
@@ -33,20 +33,20 @@
         :actions="actions2"
       >
         <template #reference>
-          <van-button style="margin-left: 20px;" type="warning"
+          <van-button style="margin-left: 20px" type="warning"
             >深色风格</van-button
           >
         </template>
       </van-popover>
       <!-- 弹出位置 -->
-      <div style="color: #666666;margin: 10px 0;">弹出位置</div>
+      <div style="color: #666666; margin: 10px 0">弹出位置</div>
       <!-- 文字较短时 通过设置 scrollable 属性开启滚动播放 -->
       <van-cell class="item-cell" is-link @click="showPopup = true"
         >选择弹出位置</van-cell
       >
       <van-popup
         v-model="showPopup"
-        style="height: 88%;"
+        style="height: 88%"
         position="bottom"
         round
       >
@@ -66,7 +66,7 @@
         <van-picker :columns="columns" @change="onChange" />
       </van-popup>
       <!-- 选项配置 -->
-      <div style="color: #666666;margin: 10px 0;">选项配置</div>
+      <div style="color: #666666; margin: 10px 0">选项配置</div>
       <van-popover
         v-model="showPopover4"
         trigger="click"
@@ -74,27 +74,27 @@
         :actions="actions4"
       >
         <template #reference>
-          <van-button style="margin-left: 10px;" type="primary"
+          <van-button style="margin-left: 10px" type="primary"
             >展示图标</van-button
           >
         </template>
       </van-popover>
       <van-popover v-model="showPopover5" trigger="click" :actions="actions5">
         <template #reference>
-          <van-button style="margin-left: 20px;" type="warning"
+          <van-button style="margin-left: 20px" type="warning"
             >禁用选项</van-button
           >
         </template>
       </van-popover>
       <!-- 自定义内容 -->
-      <div style="color: #666666;margin: 10px 0;">自定义内容</div>
+      <div style="color: #666666; margin: 10px 0">自定义内容</div>
       <van-popover
         v-model="showPopover6"
         trigger="click"
         placement="bottom-start"
       >
         <van-grid
-          style="width: 240px;"
+          style="width: 240px"
           column-num="3"
           square
           clickable
@@ -109,13 +109,13 @@
           />
         </van-grid>
         <template #reference>
-          <van-button style="margin-left: 10px;" type="primary"
+          <van-button style="margin-left: 10px" type="primary"
             >自定义内容</van-button
           >
         </template>
       </van-popover>
       <!-- 是否显示遮罩层 -->
-      <div style="color: #666666;margin: 10px 0;">是否显示遮罩层</div>
+      <div style="color: #666666; margin: 10px 0">是否显示遮罩层</div>
       <van-popover
         v-model="showPopover7"
         trigger="click"
@@ -124,7 +124,7 @@
         :close-on-click-outside="false"
       >
         <van-grid
-          style="width: 240px;"
+          style="width: 240px"
           column-num="3"
           square
           clickable
@@ -139,7 +139,7 @@
           />
         </van-grid>
         <template #reference>
-          <van-button style="margin-left: 10px;" type="primary"
+          <van-button style="margin-left: 10px" type="primary"
             >自定义内容</van-button
           >
         </template>
@@ -257,13 +257,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .item-cell {
   background-clip: border-box;

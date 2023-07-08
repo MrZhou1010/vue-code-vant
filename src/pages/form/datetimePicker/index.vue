@@ -1,7 +1,7 @@
 <template>
   <div class="datetime-picker">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,7 +12,7 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
+      <div style="color: #666666">基础用法</div>
       <van-field
         v-model="dateValue1"
         class="item-cell"
@@ -141,7 +141,7 @@
       </van-popup>
       <br />
       <!-- 选项过滤器 -->
-      <div style="color: #666666;">选项过滤器</div>
+      <div style="color: #666666">选项过滤器</div>
       <van-field
         v-model="dateValue7"
         class="item-cell"
@@ -165,7 +165,7 @@
       </van-popup>
       <br />
       <!-- 自定义列排序 -->
-      <div style="color: #666666;">自定义列排序</div>
+      <div style="color: #666666">自定义列排序</div>
       <van-field
         v-model="dateValue8"
         class="item-cell"
@@ -189,7 +189,7 @@
       </van-popup>
       <br />
       <!-- 其它 -->
-      <div style="color: #666666;">其它</div>
+      <div style="color: #666666">其它</div>
       <van-field
         v-model="dateValue9"
         class="item-cell"
@@ -316,11 +316,13 @@ export default {
       } else if (format == "MM-dd") {
         return `${date.getMonth() + 1}/${date.getDate()}`;
       } else if (format == "yyyy-MM-dd HH:mm") {
-        return `${date.getFullYear()}/${date.getMonth() +
-          1}/${date.getDate()} ${date.getHours()}/${date.getMinutes()}`;
+        return `${date.getFullYear()}/${
+          date.getMonth() + 1
+        }/${date.getDate()} ${date.getHours()}/${date.getMinutes()}`;
       } else if (format == "yyyy-MM-dd HH") {
-        return `${date.getFullYear()}/${date.getMonth() +
-          1}/${date.getDate()} ${date.getHours()}`;
+        return `${date.getFullYear()}/${
+          date.getMonth() + 1
+        }/${date.getDate()} ${date.getHours()}`;
       }
     },
     formatter(type, option) {
@@ -349,13 +351,6 @@ export default {
 
 <style lang="less" scoped>
 @import "~styles/common.less";
-
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
 
 .item-cell {
   margin-top: 1rem;

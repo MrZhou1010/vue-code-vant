@@ -1,7 +1,7 @@
 <template>
   <div class="lazyload">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,20 +12,30 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
-      <img class="img" v-for="img in imageList" v-lazy="img" :key="img" />
+      <div style="color: #666666">基础用法</div>
+      <img
+        class="img"
+        v-for="img in imageList"
+        v-lazy="img"
+        :key="`one:${img}`"
+      />
       <!-- 背景图懒加载 -->
-      <div style="color: #666666;">背景图懒加载</div>
+      <div style="color: #666666">背景图懒加载</div>
       <div
         class="item-img"
         v-for="img in imageList"
         v-lazy:background-image="img"
-        :key="img"
+        :key="`two:${img}`"
       />
       <!-- 组件懒加载 -->
-      <div style="color: #666666;">组件懒加载</div>
+      <div style="color: #666666">组件懒加载</div>
       <lazy-component>
-        <img class="img" v-for="img in imageList" v-lazy="img" :key="img" />
+        <img
+          class="img"
+          v-for="img in imageList"
+          v-lazy="img"
+          :key="`three:${img}`"
+        />
       </lazy-component>
     </div>
   </div>

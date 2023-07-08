@@ -1,7 +1,7 @@
 <template>
   <div class="overlay">
     <van-nav-bar
-      style="background-color: lightblue;"
+      style="background-color: lightblue"
       left-arrow
       fixed
       border
@@ -12,14 +12,14 @@
     </van-nav-bar>
     <div class="content">
       <!-- 基础用法 -->
-      <div style="color: #666666;">基础用法</div>
-      <div class="content-box">
+      <div style="color: #666666">基础用法</div>
+      <div class="cell-box">
         <van-cell is-link @click="showOverlay1 = true">显示遮罩层</van-cell>
       </div>
       <van-overlay :show="showOverlay1" @click="showOverlay1 = false" />
       <!-- 嵌入内容 -->
-      <div style="color: #666666;">嵌入内容</div>
-      <div class="content-box">
+      <div style="color: #666666">嵌入内容</div>
+      <div class="cell-box">
         <van-cell is-link @click="showOverlay2 = true">嵌入内容</van-cell>
       </div>
       <van-overlay :show="showOverlay2" @click="showOverlay2 = false">
@@ -55,14 +55,7 @@ export default {
 <style lang="less" scoped>
 @import "~styles/common.less";
 
-.content {
-  margin-top: 2.75rem;
-  padding: 0.625rem;
-  background-color: #f8f8f8;
-  text-align: left;
-}
-
-.content-box {
+.cell-box {
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
   padding: 0.625rem;
