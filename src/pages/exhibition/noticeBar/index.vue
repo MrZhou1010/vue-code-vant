@@ -36,9 +36,9 @@
       <!-- 通知栏模式 -->
       <div style="color: #666666; margin-left: 10px">通知栏模式</div>
       <!-- closeable模式 在右侧显示关闭按钮 -->
-      <van-notice-bar mode="closeable"
-        >技术是开发它的人的共同灵魂。</van-notice-bar
-      >
+      <van-notice-bar mode="closeable">
+        技术是开发它的人的共同灵魂。
+      </van-notice-bar>
       <!-- link模式 在右侧显示链接箭头 -->
       <van-notice-bar mode="link">技术是开发它的人的共同灵魂。</van-notice-bar>
       <!-- 自定义样式 -->

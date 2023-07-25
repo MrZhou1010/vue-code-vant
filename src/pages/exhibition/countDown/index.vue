@@ -52,9 +52,9 @@
         @finish="finish"
       />
       <van-grid clickable>
-        <van-grid-item text="开始" icon="play-circle-o" @click="start" />
-        <van-grid-item text="暂停" icon="pause-circle-o" @click="pause" />
-        <van-grid-item text="重置" icon="replay" @click="reset" />
+        <van-grid-item text="开始" icon="play-circle-o" @click="start()" />
+        <van-grid-item text="暂停" icon="pause-circle-o" @click="pause()" />
+        <van-grid-item text="重置" icon="replay" @click="reset()" />
       </van-grid>
     </div>
   </div>

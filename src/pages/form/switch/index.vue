@@ -87,8 +87,8 @@ export default {
           this.checked7 = checked;
         });
     },
-    onChange(vaule) {
-      this.$toast(vaule);
+    onChange(value) {
+      this.$toast(value);
     },
   },
 };

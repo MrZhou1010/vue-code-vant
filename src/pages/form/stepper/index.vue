@@ -116,6 +116,7 @@ export default {
       this.$router.goBack();
     },
     onChange(value, detail) {
+      console.log(detail);
       this.$toast.loading({
         forbidClick: true,
       });

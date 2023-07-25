@@ -34,7 +34,7 @@
             </template>
           </van-cell>
           <div style="padding: 5px 16px">
-            <van-button type="danger" block round @click="onConfirm">
+            <van-button type="danger" block round @click="onConfirm()">
               确认
             </van-button>
           </div>

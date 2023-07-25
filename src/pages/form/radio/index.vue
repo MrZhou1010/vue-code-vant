@@ -32,32 +32,32 @@
       <!-- 自定义形状 -->
       <div style="color: #666666">自定义形状</div>
       <van-radio-group v-model="radio4">
-        <van-radio class="item-radio" name="1" shape="square"
-          >单选框 1</van-radio
-        >
-        <van-radio class="item-radio" name="2" shape="square"
-          >单选框 2</van-radio
-        >
+        <van-radio class="item-radio" name="1" shape="square">
+          单选框 1
+        </van-radio>
+        <van-radio class="item-radio" name="2" shape="square">
+          单选框 2
+        </van-radio>
       </van-radio-group>
       <!-- 自定义颜色 -->
       <div style="color: #666666">自定义颜色</div>
       <van-radio-group v-model="radio5">
-        <van-radio class="item-radio" name="1" checked-color="#ee0a24"
-          >单选框 1</van-radio
-        >
-        <van-radio class="item-radio" name="2" checked-color="#ee0a24"
-          >单选框 2</van-radio
-        >
+        <van-radio class="item-radio" name="1" checked-color="#ee0a24">
+          单选框 1
+        </van-radio>
+        <van-radio class="item-radio" name="2" checked-color="#ee0a24">
+          单选框 2
+        </van-radio>
       </van-radio-group>
       <!-- 自定义大小 -->
       <div style="color: #666666">自定义大小</div>
       <van-radio-group v-model="radio6">
-        <van-radio class="item-radio" name="1" icon-size="24px"
-          >单选框 1</van-radio
-        >
-        <van-radio class="item-radio" name="2" icon-size="24px"
-          >单选框 2</van-radio
-        >
+        <van-radio class="item-radio" name="1" icon-size="24px">
+          单选框 1
+        </van-radio>
+        <van-radio class="item-radio" name="2" icon-size="24px">
+          单选框 2
+        </van-radio>
       </van-radio-group>
       <!-- 自定义图标 -->
       <div style="color: #666666">自定义图标</div>
@@ -84,12 +84,12 @@
       <!-- 禁用文本点击 -->
       <div style="color: #666666">禁用文本点击</div>
       <van-radio-group v-model="radio8">
-        <van-radio class="item-radio" name="1" label-disabled
-          >单选框 1</van-radio
-        >
-        <van-radio class="item-radio" name="2" label-disabled
-          >单选框 2</van-radio
-        >
+        <van-radio class="item-radio" name="1" label-disabled>
+          单选框 1
+        </van-radio>
+        <van-radio class="item-radio" name="2" label-disabled>
+          单选框 2
+        </van-radio>
         <van-radio class="item-radio" name="3" disabled>单选框 3</van-radio>
       </van-radio-group>
       <!-- 与 Cell 组件一起使用 -->

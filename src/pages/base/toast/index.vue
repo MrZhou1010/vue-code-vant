@@ -18,18 +18,21 @@
         <van-cell
           is-link
           @click="$toast.loading({ message: '加载中...', forbidClick: true })"
-          >加载提示</van-cell
         >
+          加载提示
+        </van-cell>
         <van-cell
           is-link
           @click="$toast.success({ message: '成功文案', forbidClick: true })"
-          >成功提示</van-cell
         >
+          成功提示
+        </van-cell>
         <van-cell
           is-link
           @click="$toast.fail({ message: '失败文案', forbidClick: true })"
-          >失败提示</van-cell
         >
+          失败提示
+        </van-cell>
       </div>
       <br />
       <!-- 自定义图标 -->
@@ -38,8 +41,9 @@
         <van-cell
           is-link
           @click="$toast({ message: '自定义图标', icon: 'like-o' })"
-          >自定义图标</van-cell
         >
+          自定义图标
+        </van-cell>
         <van-cell
           is-link
           @click="
@@ -49,8 +53,8 @@
             })
           "
         >
-          自定义图片</van-cell
-        >
+          自定义图片
+        </van-cell>
         <van-cell
           is-link
           @click="
@@ -60,7 +64,8 @@
               loadingType: 'spinner',
             })
           "
-          >自定义加载图标
+        >
+          自定义加载图标
         </van-cell>
       </div>
       <br />
@@ -70,13 +75,15 @@
         <van-cell
           is-link
           @click="$toast({ message: '顶部展示', position: 'top' })"
-          >顶部展示</van-cell
         >
+          顶部展示
+        </van-cell>
         <van-cell
           is-link
           @click="$toast({ message: '底部展示', position: 'bottom' })"
-          >底部展示</van-cell
         >
+          底部展示
+        </van-cell>
       </div>
       <br />
       <!-- 动态更新提示 -->

@@ -13,9 +13,9 @@
     <div class="content">
       <!-- 基础用法 -->
       <div style="color: #666666">基础用法</div>
-      <van-cell class="item-cell" is-link @click="showShareSheet1 = true"
-        >显示分享面板</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showShareSheet1 = true">
+        显示分享面板
+      </van-cell>
       <van-share-sheet
         v-model="showShareSheet1"
         title="立即分享给好友"
@@ -26,9 +26,9 @@
       <br />
       <!-- 展示多行选项 -->
       <div style="color: #666666">展示多行选项</div>
-      <van-cell class="item-cell" is-link @click="showShareSheet2 = true"
-        >显示分享面板</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showShareSheet2 = true">
+        显示分享面板
+      </van-cell>
       <van-share-sheet
         v-model="showShareSheet2"
         title="立即分享给好友"
@@ -40,9 +40,9 @@
       <br />
       <!-- 自定义图标 -->
       <div style="color: #666666">自定义图标</div>
-      <van-cell class="item-cell" is-link @click="showShareSheet3 = true"
-        >显示分享面板</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showShareSheet3 = true">
+        显示分享面板
+      </van-cell>
       <van-share-sheet
         v-model="showShareSheet3"
         title="立即分享给好友"
@@ -53,9 +53,9 @@
       <br />
       <!-- 展示描述信息 -->
       <div style="color: #666666">展示描述信息</div>
-      <van-cell class="item-cell" is-link @click="showShareSheet4 = true"
-        >显示分享面板</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showShareSheet4 = true">
+        显示分享面板
+      </van-cell>
       <van-share-sheet
         v-model="showShareSheet4"
         title="立即分享给好友"

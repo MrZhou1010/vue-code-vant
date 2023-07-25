@@ -33,12 +33,12 @@
         :border="false"
       >
         <van-collapse-item title="标题1" name="1">内容1</van-collapse-item>
-        <van-collapse-item title="标题2" name="2" :is-link="false"
-          >内容2</van-collapse-item
-        >
-        <van-collapse-item title="标题3" name="3" disabled
-          >内容3</van-collapse-item
-        >
+        <van-collapse-item title="标题2" name="2" :is-link="false">
+          内容2
+        </van-collapse-item>
+        <van-collapse-item title="标题3" name="3" disabled>
+          内容3
+        </van-collapse-item>
       </van-collapse>
       <!-- 自定义标题内容 -->
       <div style="color: #666666">自定义标题内容</div>
@@ -63,9 +63,9 @@
           </template>
           内容2
         </van-collapse-item>
-        <van-collapse-item title="标题3" name="3" label="描述内容" size="large"
-          >内容3</van-collapse-item
-        >
+        <van-collapse-item title="标题3" name="3" label="描述内容" size="large">
+          内容3
+        </van-collapse-item>
       </van-collapse>
     </div>
   </div>

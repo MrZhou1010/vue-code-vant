@@ -19,6 +19,8 @@ const home = {
       code: "150102",
       areaType: "4",
     },
+    addressList: [],
+    contactInfoList: [],
   },
   mutations: {
     setProvince(state, province) {
@@ -29,6 +31,12 @@ const home = {
     },
     setCounty(state, county) {
       state.county = county;
+    },
+    setAddressList(state, addressList) {
+      state.addressList = addressList;
+    },
+    setContactInfoList(state, contactInfoList) {
+      state.contactInfoList = contactInfoList;
     },
   },
   actions: {},

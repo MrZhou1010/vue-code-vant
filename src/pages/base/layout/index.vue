@@ -19,21 +19,22 @@
           :class="index % 2 === 0 ? 'col-red' : 'col-orange'"
           :key="index"
           :span="span"
-          >span: {{ span }}</van-col
         >
+          span: {{ span }}
+        </van-col>
       </van-row>
       <br />
       <van-row>
         <van-col class="col-red" span="6">span: 6</van-col>
-        <van-col class="col-orange" span="10" offset="2"
-          >offset: 2, span: 10</van-col
-        >
+        <van-col class="col-orange" span="10" offset="2">
+          offset: 2, span: 10
+        </van-col>
       </van-row>
       <br />
       <van-row>
-        <van-col class="col-red" span="12" offset="12"
-          >offset: 12, span: 12</van-col
-        >
+        <van-col class="col-red" span="12" offset="12">
+          offset: 12, span: 12
+        </van-col>
       </van-row>
       <br />
       <!-- 设置列元素间距 -->
@@ -84,15 +85,15 @@
       <!-- 当align="top"时手动设置align-items:flex-start才行 -->
       <div style="color: #666666">Flex 交叉轴对齐方式</div>
       <van-row class="row-blue" type="flex" align="top" @click="onClick('row')">
-        <van-col class="col-red" span="6" @click.stop="onClick('col')"
-          >span: 6</van-col
-        >
-        <van-col class="col-orange" span="6" @click.stop="onClick('col')"
-          >span: 6</van-col
-        >
-        <van-col class="col-red" span="6" @click.stop="onClick('col')"
-          >span: 6</van-col
-        >
+        <van-col class="col-red" span="6" @click.stop="onClick('col')">
+          span: 6
+        </van-col>
+        <van-col class="col-orange" span="6" @click.stop="onClick('col')">
+          span: 6
+        </van-col>
+        <van-col class="col-red" span="6" @click.stop="onClick('col')">
+          span: 6
+        </van-col>
       </van-row>
       <br />
       <van-row class="row-blue" type="flex" align="center">

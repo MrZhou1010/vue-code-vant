@@ -32,20 +32,20 @@
       <!-- 加载文案 -->
       <div style="color: #666666">加载文案</div>
       <div style="display: flex">
-        <van-loading style="margin: 10px" type="circular"
-          >加载中...</van-loading
-        >
+        <van-loading style="margin: 10px" type="circular">
+          加载中...
+        </van-loading>
         <van-loading style="margin: 10px" type="spinner">加载中...</van-loading>
       </div>
       <!-- 垂直排列 -->
       <div style="color: #666666">垂直排列</div>
       <div style="display: flex">
-        <van-loading style="margin: 10px" type="circular" vertical
-          >加载中...</van-loading
-        >
-        <van-loading style="margin: 10px" type="spinner" vertical
-          >加载中...</van-loading
-        >
+        <van-loading style="margin: 10px" type="circular" vertical>
+          加载中...
+        </van-loading>
+        <van-loading style="margin: 10px" type="spinner" vertical>
+          加载中...
+        </van-loading>
       </div>
       <!-- 自定义文案颜色 -->
       <div style="color: #666666">自定义文案颜色</div>
@@ -55,15 +55,17 @@
           type="circular"
           color="#00ff6a"
           vertical
-          >加载中...</van-loading
         >
+          加载中...
+        </van-loading>
         <van-loading
           style="margin: 10px"
           type="spinner"
           text-color="#00ff6a"
           vertical
-          >加载中...</van-loading
         >
+          加载中...
+        </van-loading>
       </div>
     </div>
   </div>

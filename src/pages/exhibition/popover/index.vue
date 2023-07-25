@@ -21,9 +21,9 @@
         @select="onSelect"
       >
         <template #reference>
-          <van-button style="margin-left: 10px" type="primary"
-            >浅色风格</van-button
-          >
+          <van-button style="margin-left: 10px" type="primary">
+            浅色风格
+          </van-button>
         </template>
       </van-popover>
       <van-popover
@@ -33,17 +33,17 @@
         :actions="actions2"
       >
         <template #reference>
-          <van-button style="margin-left: 20px" type="warning"
-            >深色风格</van-button
-          >
+          <van-button style="margin-left: 20px" type="warning">
+            深色风格
+          </van-button>
         </template>
       </van-popover>
       <!-- 弹出位置 -->
       <div style="color: #666666; margin: 10px 0">弹出位置</div>
       <!-- 文字较短时 通过设置 scrollable 属性开启滚动播放 -->
-      <van-cell class="item-cell" is-link @click="showPopup = true"
-        >选择弹出位置</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showPopup = true">
+        选择弹出位置
+      </van-cell>
       <van-popup
         v-model="showPopup"
         style="height: 88%"
@@ -74,16 +74,16 @@
         :actions="actions4"
       >
         <template #reference>
-          <van-button style="margin-left: 10px" type="primary"
-            >展示图标</van-button
-          >
+          <van-button style="margin-left: 10px" type="primary">
+            展示图标
+          </van-button>
         </template>
       </van-popover>
       <van-popover v-model="showPopover5" trigger="click" :actions="actions5">
         <template #reference>
-          <van-button style="margin-left: 20px" type="warning"
-            >禁用选项</van-button
-          >
+          <van-button style="margin-left: 20px" type="warning">
+            禁用选项
+          </van-button>
         </template>
       </van-popover>
       <!-- 自定义内容 -->
@@ -109,9 +109,9 @@
           />
         </van-grid>
         <template #reference>
-          <van-button style="margin-left: 10px" type="primary"
-            >自定义内容</van-button
-          >
+          <van-button style="margin-left: 10px" type="primary">
+            自定义内容
+          </van-button>
         </template>
       </van-popover>
       <!-- 是否显示遮罩层 -->
@@ -139,9 +139,9 @@
           />
         </van-grid>
         <template #reference>
-          <van-button style="margin-left: 10px" type="primary"
-            >自定义内容</van-button
-          >
+          <van-button style="margin-left: 10px" type="primary">
+            自定义内容
+          </van-button>
         </template>
       </van-popover>
     </div>

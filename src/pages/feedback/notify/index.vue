@@ -22,23 +22,27 @@
         <van-cell
           is-link
           @click="$notify({ type: 'primary', message: '通知内容' })"
-          >主要通知</van-cell
         >
+          主要通知
+        </van-cell>
         <van-cell
           is-link
           @click="$notify({ type: 'success', message: '通知内容' })"
-          >成功通知</van-cell
         >
+          成功通知
+        </van-cell>
         <van-cell
           is-link
           @click="$notify({ type: 'danger', message: '通知内容' })"
-          >危险通知</van-cell
         >
+          危险通知
+        </van-cell>
         <van-cell
           is-link
           @click="$notify({ type: 'warning', message: '通知内容' })"
-          >警告通知</van-cell
         >
+          警告通知
+        </van-cell>
       </div>
       <!-- 自定义通知 -->
       <div style="color: #666666">自定义通知</div>
@@ -47,8 +51,9 @@
         <van-cell
           is-link
           @click="$notify({ message: '自定义时长', duration: 1000 })"
-          >自定义时长</van-cell
         >
+          自定义时长
+        </van-cell>
       </div>
       <!-- 组件调用 -->
       <div style="color: #666666">组件调用</div>

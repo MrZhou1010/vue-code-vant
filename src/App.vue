@@ -32,7 +32,11 @@ export default {
     },
   },
   created() {},
-  mounted() {},
+  mounted() {
+    const t = this.$dayjs('2019-01-25').add(1, 'day').subtract(1, 'year').year(2009);
+    console.log(t.fromNow());
+    console.log(t.format());
+  },
   destroyed() {},
   methods: {},
 };

@@ -26,7 +26,7 @@
         v-for="img in imageList"
         v-lazy:background-image="img"
         :key="`two:${img}`"
-      />
+      ></div>
       <!-- 组件懒加载 -->
       <div style="color: #666666">组件懒加载</div>
       <lazy-component>

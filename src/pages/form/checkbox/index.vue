@@ -13,35 +13,36 @@
     <div class="content">
       <!-- 基础用法 -->
       <div style="color: #666666">基础用法</div>
-      <van-checkbox class="item-checkbox" v-model="checked1"
-        >复选框</van-checkbox
-      >
+      <van-checkbox class="item-checkbox" v-model="checked1">
+        复选框
+      </van-checkbox>
       <!-- 禁用状态 -->
       <div style="color: #666666">禁用状态</div>
-      <van-checkbox class="item-checkbox" v-model="checked1" disabled
-        >复选框</van-checkbox
-      >
-      <van-checkbox class="item-checkbox" v-model="checked2" disabled
-        >复选框</van-checkbox
-      >
+      <van-checkbox class="item-checkbox" v-model="checked1" disabled>
+        复选框
+      </van-checkbox>
+      <van-checkbox class="item-checkbox" v-model="checked2" disabled>
+        复选框
+      </van-checkbox>
       <!-- 自定义形状 -->
       <div style="color: #666666">自定义形状</div>
-      <van-checkbox class="item-checkbox" v-model="checked3" shape="square"
-        >自定义形状</van-checkbox
-      >
+      <van-checkbox class="item-checkbox" v-model="checked3" shape="square">
+        自定义形状
+      </van-checkbox>
       <!-- 自定义颜色 -->
       <div style="color: #666666">自定义颜色</div>
       <van-checkbox
         class="item-checkbox"
         v-model="checked4"
         checked-color="#ee0a24"
-        >自定义颜色</van-checkbox
       >
+        自定义颜色
+      </van-checkbox>
       <!-- 自定义大小 -->
       <div style="color: #666666">自定义大小</div>
-      <van-checkbox class="item-checkbox" v-model="checked5" icon-size="24px"
-        >自定义大小</van-checkbox
-      >
+      <van-checkbox class="item-checkbox" v-model="checked5" icon-size="24px">
+        自定义大小
+      </van-checkbox>
       <!-- 自定义图标 -->
       <div style="color: #666666">自定义图标</div>
       <van-checkbox class="item-checkbox" v-model="checked6">
@@ -59,13 +60,14 @@
         class="item-checkbox"
         v-model="checked7"
         label-position="left"
-        >文本位置</van-checkbox
       >
+        文本位置
+      </van-checkbox>
       <!-- 禁用文本点击 -->
       <div style="color: #666666">禁用文本点击</div>
-      <van-checkbox class="item-checkbox" v-model="checked7" label-disabled
-        >禁用文本点击</van-checkbox
-      >
+      <van-checkbox class="item-checkbox" v-model="checked7" label-disabled>
+        禁用文本点击
+      </van-checkbox>
       <!-- 复选框组 -->
       <div style="color: #666666">复选框组</div>
       <van-checkbox-group v-model="result1">
@@ -92,15 +94,15 @@
         <van-checkbox class="item-checkbox" name="b4">复选框 b</van-checkbox>
         <van-checkbox class="item-checkbox" name="c4">复选框 c</van-checkbox>
       </van-checkbox-group>
-      <van-button class="item-btn" type="primary" @click="selectedAll()"
-        >全选</van-button
-      >
-      <van-button class="item-btn" type="info" @click="toggleAll()"
-        >反选</van-button
-      >
-      <van-button class="item-btn" type="info" @click="unSelectedAll()"
-        >全不选</van-button
-      >
+      <van-button class="item-btn" type="primary" @click="selectedAll()">
+        全选
+      </van-button>
+      <van-button class="item-btn" type="info" @click="toggleAll()">
+        反选
+      </van-button>
+      <van-button class="item-btn" type="info" @click="unSelectedAll()">
+        全不选
+      </van-button>
       <!-- 搭配单元格组件使用 -->
       <div style="color: #666666">搭配单元格组件使用</div>
       <van-checkbox-group v-model="result5">

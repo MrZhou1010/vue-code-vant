@@ -13,17 +13,17 @@
     <div class="content">
       <!-- 基础用法 -->
       <div style="color: #666666">基础用法</div>
-      <van-cell class="item-cell" is-link @click="showActionSheet1 = true"
-        >基础用法</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showActionSheet1 = true">
+        基础用法
+      </van-cell>
       <van-action-sheet
         v-model="showActionSheet1"
         :actions="actions1"
         @select="onSelect"
       ></van-action-sheet>
-      <van-cell class="item-cell" is-link @click="showActionSheet2 = true"
-        >展示取消按钮</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showActionSheet2 = true">
+        展示取消按钮
+      </van-cell>
       <van-action-sheet
         v-model="showActionSheet2"
         :actions="actions2"
@@ -31,18 +31,18 @@
         close-on-click-action
         @cancel="onCancel"
       />
-      <van-cell class="item-cell" is-link @click="showActionSheet3 = true"
-        >展示顶部标题</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showActionSheet3 = true">
+        展示顶部标题
+      </van-cell>
       <van-action-sheet
         v-model="showActionSheet3"
         :actions="actions3"
         title="顶部标题"
         close-on-click-action
       />
-      <van-cell class="item-cell" is-link @click="showActionSheet4 = true"
-        >展示描述信息</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showActionSheet4 = true">
+        展示描述信息
+      </van-cell>
       <van-action-sheet
         v-model="showActionSheet4"
         :actions="actions4"
@@ -50,9 +50,9 @@
         description="这是一段描述信息"
         close-on-click-action
       />
-      <van-cell class="item-cell" is-link @click="showActionSheet5 = true"
-        >是否显示关闭图标</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showActionSheet5 = true">
+        是否显示关闭图标
+      </van-cell>
       <van-action-sheet
         v-model="showActionSheet5"
         :actions="actions5"
@@ -60,18 +60,18 @@
         :closeable="false"
         close-on-click-action
       />
-      <van-cell class="item-cell" is-link @click="showActionSheet6 = true"
-        >动画时长</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showActionSheet6 = true">
+        动画时长
+      </van-cell>
       <van-action-sheet
         v-model="showActionSheet6"
         :actions="actions6"
         duration="2"
         close-on-click-action
       />
-      <van-cell class="item-cell" is-link @click="showActionSheet7 = true"
-        >是否显示圆角</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showActionSheet7 = true">
+        是否显示圆角
+      </van-cell>
       <van-action-sheet
         v-model="showActionSheet7"
         :actions="actions7"
@@ -81,9 +81,9 @@
       <br />
       <!-- 选项状态 -->
       <div style="color: #666666">选项状态</div>
-      <van-cell class="item-cell" is-link @click="showActionSheet8 = true"
-        >选项状态</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showActionSheet8 = true">
+        选项状态
+      </van-cell>
       <van-action-sheet
         v-model="showActionSheet8"
         :actions="actions8"
@@ -93,9 +93,9 @@
       <br />
       <!-- 自定义面板 -->
       <div style="color: #666666">自定义面板</div>
-      <van-cell class="item-cell" is-link @click="showActionSheet9 = true"
-        >自定义面板</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showActionSheet9 = true">
+        自定义面板
+      </van-cell>
       <van-action-sheet v-model="showActionSheet9" title="标题">
         <div class="sheet-content">内容</div>
       </van-action-sheet>

@@ -106,7 +106,7 @@ const routes = [
   },
   {
     path: "/datetime-picker",
-    name: "datetimePicker",
+    name: "datetime-picker",
     component: (resolve) =>
       require(["../pages/form/datetimePicker/index"], resolve),
   },
@@ -122,13 +122,13 @@ const routes = [
   },
   {
     path: "/number-keyboard",
-    name: "numberKeyboard",
+    name: "number-keyboard",
     component: (resolve) =>
       require(["../pages/form/numberKeyboard/index"], resolve),
   },
   {
     path: "/password-input",
-    name: "passwordInput",
+    name: "password-input",
     component: (resolve) =>
       require(["../pages/form/passwordInput/index"], resolve),
   },
@@ -343,6 +343,11 @@ const routes = [
     component: (resolve) => require(["../pages/nav/navBar/index"], resolve),
   },
   {
+    path: "/pagination",
+    name: "pagination",
+    component: (resolve) => require(["../pages/nav/pagination/index"], resolve),
+  },
+  {
     path: "/sidebar",
     name: "sidebar",
     component: (resolve) => require(["../pages/nav/sideBar/index"], resolve),
@@ -363,9 +368,78 @@ const routes = [
     component: (resolve) => require(["../pages/nav/treeSelect/index"], resolve),
   },
   {
-    path: "/pagination",
-    name: "pagination",
-    component: (resolve) => require(["../pages/nav/pagination/index"], resolve),
+    path: "/address-edit",
+    name: "address-edit",
+    component: (resolve) =>
+      require(["../pages/business/addressEdit/index"], resolve),
+  },
+  {
+    path: "/address-list",
+    name: "address-list",
+    component: (resolve) =>
+      require(["../pages/business/addressList/index"], resolve),
+  },
+  {
+    path: "/area",
+    name: "area",
+    component: (resolve) => require(["../pages/business/area/index"], resolve),
+  },
+  {
+    path: "/card",
+    name: "card",
+    component: (resolve) => require(["../pages/business/card/index"], resolve),
+  },
+  {
+    path: "/contact-card",
+    name: "contact-card",
+    component: (resolve) =>
+      require(["../pages/business/contactCard/index"], resolve),
+  },
+  {
+    path: "/contact-edit",
+    name: "contact-edit",
+    component: (resolve) =>
+      require(["../pages/business/contactEdit/index"], resolve),
+  },
+  {
+    path: "/contact-list",
+    name: "contact-list",
+    component: (resolve) =>
+      require(["../pages/business/contactList/index"], resolve),
+  },
+  {
+    path: "/coupon-list",
+    name: "coupon-list",
+    component: (resolve) =>
+      require(["../pages/business/coupon/index"], resolve),
+  },
+  {
+    path: "/goods-action",
+    name: "goods-action",
+    component: (resolve) =>
+      require(["../pages/business/goodsAction/index"], resolve),
+  },
+  {
+    path: "/sku",
+    name: "sku",
+    component: (resolve) => require(["../pages/business/sku/index"], resolve),
+  },
+  {
+    path: "/submit-bar",
+    name: "submit-bar",
+    component: (resolve) =>
+      require(["../pages/business/submitBar/index"], resolve),
+  },
+  {
+    path: "/panel",
+    name: "panel",
+    component: (resolve) => require(["../pages/other/panel/index"], resolve),
+  },
+  {
+    path: "/switch-cell",
+    name: "switch-cell",
+    component: (resolve) =>
+      require(["../pages/other/switchCell/index"], resolve),
   },
 ];
 

@@ -26,43 +26,48 @@
       <br /><br />
       <!-- 细边框 -->
       <div style="color: #666666">细边框</div>
-      <van-button class="item-button" plain hairline type="primary"
-        >细边框按钮</van-button
-      >
-      <van-button class="item-button" plain hairline type="info"
-        >细边框按钮</van-button
-      >
+      <van-button class="item-button" plain hairline type="primary">
+        细边框按钮
+      </van-button>
+      <van-button class="item-button" plain hairline type="info">
+        细边框按钮
+      </van-button>
       <br /><br />
       <!-- 禁用状态 -->
       <div style="color: #666666">禁用状态</div>
-      <van-button class="item-button" disabled type="primary"
-        >禁用状态</van-button
-      >
-      <van-button class="item-button" disabled plain hairline type="info"
-        >禁用状态</van-button
-      >
+      <van-button class="item-button" disabled type="primary">
+        禁用状态
+      </van-button>
+      <van-button class="item-button" disabled plain hairline type="info">
+        禁用状态
+      </van-button>
       <br /><br />
       <!-- 加载状态 -->
       <div style="color: #666666">加载状态</div>
-      <van-button class="item-button" loading type="primary"
-        >加载状态</van-button
-      >
-      <van-button class="item-button" loading type="info" loading-type="spinner"
-        >加载状态</van-button
-      >
+      <van-button class="item-button" loading type="primary">
+        加载状态
+      </van-button>
       <van-button
         class="item-button"
+        type="info"
+        loading-type="spinner"
         loading
+      >
+        加载状态
+      </van-button>
+      <van-button
+        class="item-button"
         type="info"
         loading-text="加载中..."
         loading-size="16px"
+        loading
       />
       <br /><br />
       <!-- 按钮形状 -->
       <div style="color: #666666">按钮形状</div>
-      <van-button class="item-button" square type="primary"
-        >方形按钮</van-button
-      >
+      <van-button class="item-button" square type="primary">
+        方形按钮
+      </van-button>
       <van-button class="item-button" round type="info">圆形按钮</van-button>
       <br /><br />
       <!-- 图标按钮 -->
@@ -73,8 +78,9 @@
         icon="plus"
         icon-position="right"
         type="info"
-        >按钮</van-button
       >
+        按钮
+      </van-button>
       <van-button
         class="item-button"
         icon="https://img01.yzcdn.cn/vant/user-active.png"
@@ -84,43 +90,44 @@
       </van-button>
       <br /><br />
       <!-- 按钮尺寸 -->
-      <van-button class="item-button" type="primary" size="large"
-        >大号按钮</van-button
-      >
-      <van-button class="item-button" type="primary" size="normal"
-        >普通按钮</van-button
-      >
-      <van-button class="item-button" type="primary" size="small"
-        >小型按钮</van-button
-      >
-      <van-button class="item-button" type="primary" size="mini"
-        >迷你按钮</van-button
-      >
+      <van-button class="item-button" type="primary" size="large">
+        大号按钮
+      </van-button>
+      <van-button class="item-button" type="primary" size="normal">
+        普通按钮
+      </van-button>
+      <van-button class="item-button" type="primary" size="small">
+        小型按钮
+      </van-button>
+      <van-button class="item-button" type="primary" size="mini">
+        迷你按钮
+      </van-button>
       <br /><br />
       <!-- 块级元素 -->
       <van-button class="item-button" block type="primary">块级元素</van-button>
       <br /><br />
       <!-- 页面导航 -->
       <div style="color: #666666">页面导航</div>
-      <van-button class="item-button" type="primary" url="http://www.baidu.com"
-        >URL跳转</van-button
-      >
-      <van-button class="item-button" type="primary" to="/home"
-        >路由跳转</van-button
-      >
+      <van-button class="item-button" type="primary" url="http://www.baidu.com">
+        URL跳转
+      </van-button>
+      <van-button class="item-button" type="primary" to="/home">
+        路由跳转
+      </van-button>
       <br /><br />
       <!-- 自定义颜色 -->
       <div style="color: #666666">自定义颜色</div>
-      <van-button class="item-button" color="#7232dd" @click="onClick()"
-        >单色按钮</van-button
-      >
+      <van-button class="item-button" color="#7232dd" @click="onClick()">
+        单色按钮
+      </van-button>
       <van-button
         class="item-button"
-        plain
         color="#7232dd"
+        plain
         @touchstart="onTouchstart()"
-        >单色按钮</van-button
       >
+        单色按钮
+      </van-button>
       <van-button
         class="item-button"
         color="linear-gradient(to right, #ff9034, #ee0a24)"

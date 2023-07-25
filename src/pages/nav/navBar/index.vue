@@ -19,8 +19,8 @@
         left-text="返回"
         right-text="按钮"
         left-arrow
-        @click-left="onClickLeft"
-        @click-right="onClickRight"
+        @click-left="onClickLeft()"
+        @click-right="onClickRight()"
       />
       <!-- 使用插槽 -->
       <div style="color: #666666; margin: 10px 0">使用插槽</div>

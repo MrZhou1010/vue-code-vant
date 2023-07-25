@@ -67,21 +67,21 @@
       <!-- 动画 -->
       <div style="color: #666666">动画</div>
       <div class="content-ellipsis">
-        <van-cell class="item-cell" is-link @click="visible1 = true"
-          >淡入</van-cell
-        >
-        <van-cell class="item-cell" is-link @click="visible2 = true"
-          >上滑进入</van-cell
-        >
-        <van-cell class="item-cell" is-link @click="visible3 = true"
-          >下滑进入</van-cell
-        >
-        <van-cell class="item-cell" is-link @click="visible4 = true"
-          >左滑进入</van-cell
-        >
-        <van-cell class="item-cell" is-link @click="visible5 = true"
-          >右滑进入</van-cell
-        >
+        <van-cell class="item-cell" is-link @click="visible1 = true">
+          淡入
+        </van-cell>
+        <van-cell class="item-cell" is-link @click="visible2 = true">
+          上滑进入
+        </van-cell>
+        <van-cell class="item-cell" is-link @click="visible3 = true">
+          下滑进入
+        </van-cell>
+        <van-cell class="item-cell" is-link @click="visible4 = true">
+          左滑进入
+        </van-cell>
+        <van-cell class="item-cell" is-link @click="visible5 = true">
+          右滑进入
+        </van-cell>
       </div>
       <!-- 淡入 -->
       <transition name="van-fade">

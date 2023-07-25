@@ -14,9 +14,9 @@
       <!-- 基础用法 -->
       <div style="color: #666666; margin: 10px 0">基础用法</div>
       <van-sticky>
-        <van-button style="margin-left: 10px" type="primary"
-          >基础用法</van-button
-        >
+        <van-button style="margin-left: 10px" type="primary">
+          基础用法
+        </van-button>
       </van-sticky>
       <!-- 吸顶距离 -->
       <div style="color: #666666; margin: 10px 0">吸顶距离</div>
@@ -27,9 +27,9 @@
       <div style="color: #666666; margin: 10px 0">指定容器</div>
       <div ref="container" style="height: 150px; background-color: white">
         <van-sticky :container="container">
-          <van-button style="margin-left: 220px" type="warning"
-            >指定容器</van-button
-          >
+          <van-button style="margin-left: 220px" type="warning">
+            指定容器
+          </van-button>
         </van-sticky>
       </div>
     </div>

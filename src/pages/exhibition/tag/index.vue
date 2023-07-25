@@ -44,8 +44,9 @@
             size="medium"
             closeable
             @close="show = false"
-            >标签</van-tag
           >
+            标签
+          </van-tag>
         </van-cell>
       </van-cell-group>
       <!-- 标签大小 -->

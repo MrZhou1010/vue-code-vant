@@ -24,7 +24,7 @@
       </div>
       <van-overlay :show="showOverlay2" @click="showOverlay2 = false">
         <div class="wrapper">
-          <div class="block" @click.stop />
+          <div class="block" @click.stop></div>
         </div>
       </van-overlay>
     </div>

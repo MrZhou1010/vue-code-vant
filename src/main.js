@@ -2,15 +2,13 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import "./vant/vant";
 
-import Vant from "vant";
-import { Lazyload } from "vant";
-import "vant/lib/index.css";
-Vue.use(Vant);
-// 注册时可以配置额外的选项
-Vue.use(Lazyload, {
-  lazyComponent: true,
-});
+// 日期时间插件
+import dayjs from "dayjs";
+import customParseFormat from "dayjs/plugin/customParseFormat";
+dayjs.extend(customParseFormat);
+Vue.prototype.$dayjs = dayjs;
 
 Vue.config.productionTip = false;
 

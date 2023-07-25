@@ -13,25 +13,25 @@
     <div class="content">
       <!-- 基础用法 -->
       <div style="color: #666666">基础用法</div>
-      <van-cell class="item-cell" is-link @click="showPopup('center')"
-        >展示弹出层</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showPopup('center')">
+        展示弹出层
+      </van-cell>
       <van-popup v-model="show1" class="popup-content"></van-popup>
       <br />
       <!-- 弹出位置 -->
       <div style="color: #666666">弹出位置</div>
-      <van-cell class="item-cell" is-link @click="showPopup('top')"
-        >顶部弹出</van-cell
-      >
-      <van-cell class="item-cell" is-link @click="showPopup('bottom')"
-        >底部弹出</van-cell
-      >
-      <van-cell class="item-cell" is-link @click="showPopup('left')"
-        >左侧弹出</van-cell
-      >
-      <van-cell class="item-cell" is-link @click="showPopup('right')"
-        >右侧弹出</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="showPopup('top')">
+        顶部弹出
+      </van-cell>
+      <van-cell class="item-cell" is-link @click="showPopup('bottom')">
+        底部弹出
+      </van-cell>
+      <van-cell class="item-cell" is-link @click="showPopup('left')">
+        左侧弹出
+      </van-cell>
+      <van-cell class="item-cell" is-link @click="showPopup('right')">
+        右侧弹出
+      </van-cell>
       <van-popup
         v-model="show2"
         :class="'popup-' + position"
@@ -40,18 +40,18 @@
       <br />
       <!-- 关闭图标 -->
       <div style="color: #666666">关闭图标</div>
-      <van-cell class="item-cell" is-link @click="show3 = true"
-        >关闭图标</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="show3 = true">
+        关闭图标
+      </van-cell>
       <van-popup
         v-model="show3"
         class="popup-bottom"
         closeable
         position="bottom"
       ></van-popup>
-      <van-cell class="item-cell" is-link @click="show4 = true"
-        >自定义图标</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="show4 = true">
+        自定义图标
+      </van-cell>
       <van-popup
         v-model="show4"
         class="popup-bottom"
@@ -60,9 +60,9 @@
         position="bottom"
       >
       </van-popup>
-      <van-cell class="item-cell" is-link @click="show5 = true"
-        >图标位置</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="show5 = true">
+        图标位置
+      </van-cell>
       <van-popup
         v-model="show5"
         class="popup-bottom"
@@ -74,9 +74,9 @@
       <br />
       <!-- 圆角弹窗 -->
       <div style="color: #666666">圆角弹窗</div>
-      <van-cell class="item-cell" is-link @click="show6 = true"
-        >圆角弹窗</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="show6 = true">
+        圆角弹窗
+      </van-cell>
       <van-popup
         v-model="show6"
         class="popup-right"
@@ -86,9 +86,9 @@
       <br />
       <!-- 指定挂载节点 -->
       <div style="color: #666666">指定挂载节点</div>
-      <van-cell class="item-cell" is-link @click="show7 = true"
-        >指定挂载节点</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="show7 = true">
+        指定挂载节点
+      </van-cell>
       <van-popup
         v-model="show7"
         class="popup-content"
@@ -97,9 +97,9 @@
       <br />
       <!-- 是否显示遮罩层 -->
       <div style="color: #666666">是否显示遮罩层</div>
-      <van-cell class="item-cell" is-link @click="show8 = true"
-        >是否显示遮罩层</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="show8 = true">
+        是否显示遮罩层
+      </van-cell>
       <van-popup
         v-model="show8"
         class="popup-content"
@@ -112,9 +112,9 @@
       <br />
       <!-- 动画时长 -->
       <div style="color: #666666">动画时长</div>
-      <van-cell class="item-cell" is-link @click="show9 = true"
-        >动画时长</van-cell
-      >
+      <van-cell class="item-cell" is-link @click="show9 = true">
+        动画时长
+      </van-cell>
       <van-popup
         v-model="show9"
         class="popup-bottom"
